@@ -2,7 +2,10 @@ import React from "react";
 import Head from "next/head";
 
 import Banner from "../components/Home/Banner";
-const about = () => {
+
+
+
+const Home = () => {
   return (
     <>
       <div>
@@ -24,11 +27,11 @@ const about = () => {
           <meta property="og:image" content="/home.png" />
         </Head>
         <div className="app">
-          <Banner></Banner>
+          <Banner />
         </div>
       </div>
     </>
   );
 };
 
-export default about;
+export default Home;

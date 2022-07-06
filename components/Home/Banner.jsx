@@ -15,7 +15,6 @@ const Banner = ({ countryName = "bo" }) => {
     if (typeof window !== "undefined") {
       window.WOW = require("wowjs");
     }
-
     new WOW.WOW().init();
   }, []);
 
@@ -88,12 +87,11 @@ const Banner = ({ countryName = "bo" }) => {
                     data-wow-delay="0.5s"
                   >
                     <Image
+                    className={styles.rightimage}
+                      width="710px"
+                      height='620px'
                       layout='raw'
-                      width="1980px"
-                      height='750px'
-                      src='/Group 18.png'
-                      className={styles.rightimage}
-                      alt={"mockup de un celular simulando una app"}
+                      src='/group_18.png'
                     />
                   </div>
                 </div>
@@ -107,6 +105,3 @@ const Banner = ({ countryName = "bo" }) => {
 };
 
 export default Banner;
-/* 
-  bajarle el tamano de las banderas
-*/
