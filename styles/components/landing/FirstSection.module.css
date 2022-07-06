@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Righteous";
-  src: url("../../../public/assets/fonts/Righteous-Regular.ttf");
+  src: url("/fonts/Righteous-Regular.ttf");
 }
 
 .landing__onecontainer {
