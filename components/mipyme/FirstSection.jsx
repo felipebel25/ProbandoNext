@@ -7,7 +7,7 @@ const FirstSection = ({title , text , textButton, imageUrl, openModal}) => {
             <div className={styles.landing__onetext}>
                 <div className={styles.landing__oneflag}>
                     <h5>En Bolivia</h5>
-                    <Image layout='raw' src='/assets/images/Bandera_de_Bolivia_(Estado) (1) 1.svg' alt="" />
+                    <Image width='24px' height='24px' layout='raw' src='/Bandera_de_Bolivia_(Estado) (1) 1.svg' alt="" />
                 </div>
                 <h1>{title}</h1>
                 <p>{text}</p>
@@ -20,7 +20,7 @@ const FirstSection = ({title , text , textButton, imageUrl, openModal}) => {
                 </div>
             </div>
             <div className={styles.landing__mobileimage}>
-                <Image layout='raw' src={imageUrl} alt="" />
+                <Image layout='raw' width='1000px' height='900px' src={imageUrl} alt="" />
             </div>
 
         </section>

@@ -16,7 +16,7 @@
 
 .banner:after {
   content: "";
-  background-image: url(../../public/assets/images//Group\ 17.jpg);
+  background-image: url(/Group\ 17.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;

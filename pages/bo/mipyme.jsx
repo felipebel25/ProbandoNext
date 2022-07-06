@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Head from "next/head";
-import mockupAppAura from "../../public/assets/images/mockup_banner-mobile.png";
 import FirstSection from "../../components/mipyme/FirstSection";
 const about = () => {
   const [modalCountry, setModalCountry] = useState(false);
@@ -16,7 +15,7 @@ const about = () => {
           <meta name="description" content="Nuestro objetivo es ayudarte a crecer tu negocio con servicios financieros a tu medida" />
           <meta property="og:title" content="Servicios financieros para la miPYME | AURA Financial"></meta>
           <meta property="og:description" content="Nuestro objetivo es ayudarte a crecer tu negocio con servicios financieros a tu medida"></meta>
-          <meta property="og:image" content="../../public/assets/landing_screenshot.png" />
+          <meta property="og:image" content="/landing_screenshot.png" />
 
         </Head>
         <main className="landing">
@@ -29,7 +28,7 @@ const about = () => {
               "Aprende como controlar tus finanzas personales ahorrar, invertir e incluso como obtener un crédito para tu negocio."
             }
             textButton={"Registra tu negocio "}
-            imageUrl={mockupAppAura}
+            imageUrl='/mockup_banner-mobile.png'
           />
         </main>
       </div>

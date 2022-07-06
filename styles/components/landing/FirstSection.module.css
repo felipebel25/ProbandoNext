@@ -4,7 +4,7 @@
 }
 
 .landing__onecontainer {
-  background-image: url("../../../public/assets/images/hands__mockup_mobile.png");
+  background-image: url("/hands__mockup_mobile.png");
   background-position: top right;
   background-repeat: no-repeat;
   background-size: contain;
@@ -50,7 +50,7 @@
   align-items: center;
 }
 .landing__onecontainer {
-  background-image: url("../../../public/assets/images/hands__mockup_mobile.png");
+  background-image: url("/hands__mockup_mobile.png");
   background-position: top right;
   background-repeat: no-repeat;
   background-size: contain;

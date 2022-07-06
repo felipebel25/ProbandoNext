@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import cellPhone from "../../public/assets/images/Group 18.png";
 import Image from "next/image";
 import styles from '../../styles/components/Banner.module.css'
 const Banner = ({ countryName = "bo" }) => {
@@ -90,7 +89,9 @@ const Banner = ({ countryName = "bo" }) => {
                   >
                     <Image
                       layout='raw'
-                      src='/assets/images/Group 18.png'
+                      width="1980px"
+                      height='750px'
+                      src='/Group 18.png'
                       className={styles.rightimage}
                       alt={"mockup de un celular simulando una app"}
                     />
