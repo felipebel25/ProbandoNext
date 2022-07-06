@@ -8,7 +8,7 @@ const FirstSection = ({title , text , textButton, imageUrl, openModal}) => {
             <div className={styles.landing__onetext}>
                 <div className={styles.landing__oneflag}>
                     <h5>En Bolivia</h5>
-                    <Image layout='raw' src={flagBolivia} alt="" />
+                    <Image layout='raw' src='../../public/assets/images/Bandera_de_Bolivia_(Estado) (1) 1.svg' alt="" />
                 </div>
                 <h1>{title}</h1>
                 <p>{text}</p>
