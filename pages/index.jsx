@@ -21,7 +21,7 @@ const about = () => {
             property="og:description"
             content="La app que te acompaña a lo largo de tu vida financiera. Te facilitamos el entendimiento de la finanzas, ayudamos a armar tu expediente y te contactamos con las financieras que cubran tus necesidades especificas. A fin de que tu negocio y tu vida crezcan."
           ></meta>
-          <meta property="og:image" content="../assets/home.png" />
+          <meta property="og:image" content="../publicassets/home.png" />
         </Head>
         <div className="app">
           <Banner></Banner>

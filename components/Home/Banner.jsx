@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import cellPhone from "../../assets/images/Group 18.png";
+import cellPhone from "../../public/assets/images/Group 18.png";
 import Image from "next/image";
 import styles from '../../styles/components/Banner.module.css'
 const Banner = ({ countryName = "bo" }) => {

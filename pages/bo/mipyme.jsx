@@ -17,7 +17,7 @@ const about = () => {
           <meta name="description" content="Nuestro objetivo es ayudarte a crecer tu negocio con servicios financieros a tu medida" />
           <meta property="og:title" content="Servicios financieros para la miPYME | AURA Financial"></meta>
           <meta property="og:description" content="Nuestro objetivo es ayudarte a crecer tu negocio con servicios financieros a tu medida"></meta>
-          <meta property="og:image" content="../../assets/landing_screenshot.png" />
+          <meta property="og:image" content="../../public/assets/landing_screenshot.png" />
 
         </Head>
         <main className="landing">
