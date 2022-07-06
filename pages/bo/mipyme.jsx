@@ -4,7 +4,6 @@ import mockupAppAura from "../../public/assets/images/mockup_banner-mobile.png";
 import FirstSection from "../../components/mipyme/FirstSection";
 const about = () => {
   const [modalCountry, setModalCountry] = useState(false);
-
   return (
     <>
       <div className="aurasocials">

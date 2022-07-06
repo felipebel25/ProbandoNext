@@ -90,7 +90,7 @@ const Banner = ({ countryName = "bo" }) => {
                   >
                     <Image
                       layout='raw'
-                      src={cellPhone}
+                      src='/assets/images/Group 18.png'
                       className={styles.rightimage}
                       alt={"mockup de un celular simulando una app"}
                     />
