@@ -1,21 +1,26 @@
-import Navbar from '../components/Navbar/Navbar'
-import React from 'react'
+import React from "react";
 import Head from "next/head";
 
-const Home = () => {
+import Banner from "../components/Home/Banner";
+const about = () => {
   return (
-    <div>
+    <>
+      <div>
       <Head>
-        <title>aasdasd</title>
-        <meta name="description" content="soy home" />
-        <meta property="og:description" content="home"></meta>
-        <meta property="og:title" content="titulo"></meta>
+        <title>AURA Financial | Home Bolivia</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="La app que te acompaña a lo largo de tu vida financiera. Te facilitamos el entendimiento de la finanzas, ayudamos a armar tu expediente y te contactamos con las financieras que cubran tus necesidades especificas. A fin de que tu negocio y tu vida crezcan." />
+        <meta property="og:title" content="Aura Financial"></meta>
+        <meta property="og:description" content="La app que te acompaña a lo largo de tu vida financiera. Te facilitamos el entendimiento de la finanzas, ayudamos a armar tu expediente y te contactamos con las financieras que cubran tus necesidades especificas. A fin de que tu negocio y tu vida crezcan."></meta>
 
       </Head>
-        <h1>Hola platzi!</h1>
-        <Navbar />
-    </div>
-  )
-}
+      <div className="app">
 
-export default Home
+        <Banner></Banner>
+      </div>
+      </div>
+    </>
+  );
+};
+
+export default about;
