@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import flagBolivia from '../../assets/images/Bandera_de_Bolivia_(Estado) (1) 1.svg'
+import flagBolivia from '../../public/assets/images/Bandera_de_Bolivia_(Estado) (1) 1.svg'
 import styles from '../../styles/components/landing/FirstSection.module.css'
 const FirstSection = ({title , text , textButton, imageUrl, openModal}) => {
     return (

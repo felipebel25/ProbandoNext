@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Head from "next/head";
-import mockupAppAura from "../../assets/images/mockup_banner-mobile.png";
+import mockupAppAura from "../../public/assets/images/mockup_banner-mobile.png";
 import FirstSection from "../../components/mipyme/FirstSection";
 const about = () => {
   const [modalCountry, setModalCountry] = useState(false);
