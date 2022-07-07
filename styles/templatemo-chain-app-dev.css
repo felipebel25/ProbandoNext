@@ -29,15 +29,19 @@ reset
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+em {
+  font-style: normal;
+  color: #5532c8;
+  padding: 0.2rem;
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 html,
@@ -102,12 +106,15 @@ figcaption {
   padding: 0;
   border: 0;
   outline: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-p{margin-bottom: 1rem;}
+p {
+  margin-bottom: 1rem;
+}
 /* clear fix */
 .grid:after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
 }
@@ -127,7 +134,7 @@ p{margin-bottom: 1rem;}
   display: block;
   max-width: 100%;
 }
-.container__pasos{
+.container__pasos {
   width: 100%;
   height: 100%;
   max-width: 1200px;
@@ -156,7 +163,6 @@ html[xmlns] .clearfix {
   height: 100%;
 }
 
-
 * html .clearfix {
   height: 1%;
 }
@@ -184,7 +190,7 @@ hgroup {
 
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   background-color: #fff;
 
@@ -195,8 +201,7 @@ a {
   text-decoration: none !important;
 }
 
-.app h1 
-h2 {
+.app h1 h2 {
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 50px;
@@ -209,7 +214,7 @@ h2 {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-.app p{
+.app p {
   color: #0d081e;
   font-size: 22px;
   font-weight: 300;
@@ -218,7 +223,6 @@ h2 {
 .app ul {
   margin-bottom: 0px;
 }
-
 
 img {
   width: 100%;
@@ -233,7 +237,7 @@ global styles
 html,
 body {
   background: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 ::selection {
@@ -247,18 +251,17 @@ body {
 }
 
 @media (max-width: 991px) {
-
   .aurosocials h1 {
     font-size: 45px;
-}
+  }
 
-.aurosocials h2 {
+  .aurosocials h2 {
     font-size: 34px;
-}
+  }
 
-.aurosocials p {
+  .aurosocials p {
     font-size: 18px;
-}
+  }
 
   .clients__button {
     border: none;
@@ -271,10 +274,8 @@ body {
     margin-top: 2rem;
     margin-left: 0.2rem;
     height: 3rem;
-
   }
 
- 
   html,
   body {
     overflow-x: hidden;
@@ -293,8 +294,6 @@ body {
     margin-bottom: 60px;
   }
 }
-
-
 
 .section-heading h4 {
   color: #2a2a2a;
@@ -316,7 +315,6 @@ body {
 
 .section-heading p {
   margin-top: 10px;
-  letter-spacing: 3px;
 }
 
 .show-up {
@@ -334,7 +332,7 @@ body {
   border-radius: 23px;
   font-weight: 500 !important;
   letter-spacing: 0.3px !important;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .white-button a i {
@@ -357,7 +355,7 @@ body {
 .text-button a i {
   margin-left: 5px;
   font-size: 14px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .text-button a:hover i {
@@ -371,17 +369,25 @@ body {
   text-transform: capitalize;
   font-size: 15px;
   background: rgb(19, 175, 240);
-  background: linear-gradient(105deg, rgba(91, 104, 235, 1) 0%, rgba(40, 225, 253, 1) 100%);
+  background: linear-gradient(
+    105deg,
+    rgba(91, 104, 235, 1) 0%,
+    rgba(40, 225, 253, 1) 100%
+  );
   border-radius: 23px;
   font-weight: 500 !important;
   letter-spacing: 0.3px !important;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .gradient-button a:hover {
   color: #fff !important;
   background: rgb(19, 175, 240);
-  background: linear-gradient(105deg, rgba(91, 104, 235, 1) 0%, rgba(40, 225, 253, 1) 100%);
+  background: linear-gradient(
+    105deg,
+    rgba(91, 104, 235, 1) 0%,
+    rgba(40, 225, 253, 1) 100%
+  );
 }
 
 .border-button a {
@@ -396,7 +402,7 @@ body {
   border-radius: 23px;
   font-weight: 500 !important;
   letter-spacing: 0.3px !important;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .border-button a:hover {
@@ -406,25 +412,24 @@ body {
 /* mipyme */
 .aurasocials h1 {
   font-size: 55px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 700;
   padding: 1rem 0;
 }
 
 .aurosocials h2 {
   font-size: 40px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 700;
 }
-.aurosocials p{
-  font-family: 'Montserrat';
+.aurosocials p {
+  font-family: "Montserrat";
   font-weight: 300;
   margin-bottom: 1rem;
 }
-.aurosocials h5{
-  font-family: 'Montserrat';
+.aurosocials h5 {
+  font-family: "Montserrat";
   font-weight: 300;
-
 }
 
 .aurasocials {
@@ -432,7 +437,6 @@ body {
   height: 100%;
   display: flex;
   justify-content: center;
-
 }
 
 /* 
@@ -443,7 +447,7 @@ header
 
 .background-header {
   background-color: #fff !important;
-  height: 80px ;
+  height: 80px;
   border-bottom: none !important;
   position: fixed !important;
   top: 0px;
@@ -471,7 +475,7 @@ header
   width: 100%;
   height: 1px;
   background-color: #5532c8;
-  content: '';
+  content: "";
   left: 50%;
   bottom: -20px;
   transform: translateX(-50%);
@@ -480,7 +484,7 @@ header
 .background-header .nav li:last-child a.active:after {
   background-color: transparent;
 }
-.header-nav{
+.header-nav {
   background-color: transparent;
 }
 .header-area {
@@ -489,10 +493,10 @@ header
   right: 0px;
   z-index: 100;
   height: 80px;
-  -webkit-transition: all .5s ease 0s;
-  -moz-transition: all .5s ease 0s;
-  -o-transition: all .5s ease 0s;
-  transition: all .5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .header-area .main-nav {
   min-height: 80px;
@@ -624,7 +628,8 @@ header
   transform: translateY(+2em);
   visibility: hidden;
   z-index: -1;
-  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
+    z-index 0s linear 0.01s;
 }
 
 .header-area .main-nav .nav li.submenu ul li {
@@ -681,7 +686,6 @@ header
   right: 40px;
   display: none;
 }
-
 
 .background-header .main-nav .menu-trigger {
   top: 23px;
@@ -785,7 +789,6 @@ header
   background-color: #2a2a2a;
 }
 
-
 .header-area.header-sticky {
   min-height: 80px;
 }
@@ -807,11 +810,9 @@ header
   .header-area .main-nav:before {
     display: none;
   }
- 
 }
 
 @media (max-width: 992px) {
-
   .header-area .main-nav .nav li:last-child,
   .background-header .main-nav .nav li:last-child {
     color: #069;
@@ -828,7 +829,6 @@ header
 }
 
 @media (max-width: 767px) {
-
   .pre-header ul.info li:last-child,
   .pre-header ul.info li:nth-child(6) {
     display: none !important;
@@ -866,7 +866,6 @@ header
   .header-area .container {
     padding: 0px;
   }
-
 
   .header-area .logo {
     margin-left: 30px;
@@ -952,7 +951,7 @@ header
   }
 
   .header-area .main-nav .nav li.submenu:after {
-    color: #3B566E;
+    color: #3b566e;
     right: 25px;
     font-size: 14px;
     top: 15px;
@@ -1075,9 +1074,7 @@ preloader
   position: absolute;
   top: 0;
   z-index: 6;
-
 }
-
 
 /* 
 ---------------------------------------------
@@ -1095,14 +1092,13 @@ Banner Style
   height: 100vh;
   display: flex;
   align-items: center;
-
 }
-.col-lg-12{
+.col-lg-12 {
   width: 100%;
 }
 
 .main-banner:after {
-  content: '';
+  content: "";
   background-image: url(/Group\ 17.jpg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -1117,7 +1113,6 @@ Banner Style
 .main-banner .left-content {
   margin-right: 15px;
   max-width: 520px;
-
 }
 
 .main-banner .left-content h2 {
@@ -1129,11 +1124,9 @@ Banner Style
   margin-bottom: 20px;
 }
 
-#container__inicio--country{
+#container__inicio--country {
   margin-bottom: 0;
-  
 }
-
 
 .main-banner .left-content .first-button {
   margin-right: 15px;
@@ -1175,7 +1168,7 @@ Banner Style
   min-height: 1.3rem;
   max-height: 1.3rem;
 }
-.banderas__container{
+.banderas__container {
   position: absolute;
   background-color: white;
   display: flex;
@@ -1187,13 +1180,13 @@ Banner Style
   padding: 0.2rem 1rem;
   z-index: 6;
 }
-.banderas__container a{
+.banderas__container a {
   margin: 0;
 }
-.downIcon{
+.downIcon {
   cursor: pointer;
 }
-.banderas__closeModal{
+.banderas__closeModal {
   position: absolute;
   background-color: transparent;
   width: 100vw;
@@ -1202,7 +1195,14 @@ Banner Style
   left: -120%;
   z-index: 5;
 }
-iframe{ position: absolute; left:0; right:0; bottom:0; top:0; border:0; }
+iframe {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border: 0;
+}
 /*
 ---------------------------------------------
 About Us
@@ -1345,19 +1345,19 @@ em {
   margin: 0 auto;
 }
 
-.button--component button{
-    border: none;
-    color: white;
-    border-radius: 0.3rem;
-    cursor: pointer;
-    background-color: #5532c8;
-    width: 100%;
-    min-width: 13rem;
-    max-width: 20rem;
-    height: 3rem;
-    margin-top: 1rem;
+.button--component button {
+  border: none;
+  color: white;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  background-color: #5532c8;
+  width: 100%;
+  min-width: 13rem;
+  max-width: 20rem;
+  height: 3rem;
+  margin-top: 1rem;
 }
-.center{
+.center {
   margin: 0 auto;
 }
 /*
@@ -1467,16 +1467,12 @@ strategygoasl
 /* 
   doopler
 */
-  
-
 
 /* 
 ---------------------------------------------
 The Clients
 ---------------------------------------------
 */
-
-
 
 .the-clients .section-heading {
   text-align: center;
@@ -1487,7 +1483,6 @@ The Clients
   margin-top: 10px;
   margin-left: 18%;
   margin-right: 18%;
-
 }
 
 .menu .thumb h4 {
@@ -1573,7 +1568,6 @@ The Clients
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
-  
 }
 
 .the-clients .nacc .thumb .client-content p {
@@ -1610,7 +1604,6 @@ The Clients
   color: #2a2a2a;
 }
 
-
 /* 
 
 
@@ -1618,20 +1611,15 @@ financial
 
 */
 
-
-.information{
+.information {
   background-color: #f5f5f7;
   height: 100%;
-  padding:  0;
+  padding: 0;
   padding-top: 9rem;
-
-
 }
 /* .offset-lg-2 {
   margin: 0;
 } */
-
-
 
 .financial__image {
   background-image: url(/Group\ 34.png);
@@ -1732,7 +1720,6 @@ financial
 }
 
 .financial--titulos {
-
   max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -1767,8 +1754,6 @@ financial
   height: 95%;
 }
 
-
-
 .financial__notices--box p {
   font-weight: 300;
   width: 90%;
@@ -1776,9 +1761,7 @@ financial
   letter-spacing: 0;
 }
 
-
 .financial__consejos2 {
-
   width: 90%;
   max-width: 1150px;
   height: 24rem;
@@ -1823,7 +1806,6 @@ financial
   display: flex;
 
   align-items: flex-end;
-
 }
 
 /* 
@@ -1846,8 +1828,6 @@ Pricing
   margin-left: 18%;
   margin-right: 18%;
   letter-spacing: 3px;
-
-
 }
 
 .pricing-item-regular {
@@ -1866,7 +1846,7 @@ Pricing
   top: 0;
   left: 0;
   z-index: 0;
-  content: '';
+  content: "";
   width: 274px;
   height: 221px;
 }
@@ -1876,7 +1856,7 @@ Pricing
   bottom: 0;
   right: 0;
   z-index: 0;
-  content: '';
+  content: "";
   width: 370px;
   height: 171px;
 }
@@ -1939,7 +1919,7 @@ Pricing
   top: 0;
   left: 0;
   z-index: 0;
-  content: '';
+  content: "";
   width: 281px;
   height: 251px;
 }
@@ -1951,7 +1931,7 @@ Pricing
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 0;
-  content: '';
+  content: "";
   width: 100%;
   height: 201px;
 }
@@ -1998,9 +1978,6 @@ Pricing
   z-index: 1;
   margin-top: 40px;
 }
-
-
-
 
 /* 
 ---------------------------------------------
@@ -2075,7 +2052,6 @@ Free Quote
   color: #fff;
 }
 
-
 /* 
 ---------------------------------------------
 Footer Style
@@ -2132,7 +2108,7 @@ footer #search input {
   border-bottom: 1px solid #fff;
   width: 100%;
 }
-.container__suscribe{
+.container__suscribe {
   display: flex;
   justify-content: center;
 }
@@ -2143,7 +2119,7 @@ footer #search button {
   background-color: transparent;
   color: #fff;
   width: 100%;
-  transition: all .5s;
+  transition: all 0.5s;
   margin: 0 auto;
   width: 14rem;
 }
@@ -2160,7 +2136,7 @@ footer #search button:hover {
 
 .footer-widget p {
   font-size: 15px;
-  transition: all .3s;
+  transition: all 0.3s;
   font-weight: 400;
 }
 
@@ -2214,8 +2190,7 @@ footer #search button:hover {
 .footer-widget ul li a {
   font-size: 15px;
   color: #fff;
-  transition: all .3s;
-  ;
+  transition: all 0.3s;
 }
 
 .footer-widget a:hover {
@@ -2232,14 +2207,13 @@ footer .copyright-text p {
 
 footer p a {
   color: #fff;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 footer p a:hover {
   opacity: 0.75;
   color: #fff;
 }
-
 
 /*
 ---------------------------------------------
@@ -2264,39 +2238,39 @@ PopUp
   height: auto;
   left: 45%;
   top: 60px;
-  background: #FFF;
+  background: #fff;
 }
 
 .btn {
   padding: 10px 20px;
   background: #5532c8;
   color: #fff;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .btn_red {
   background: #5532c8;
-  color: #FFF;
+  color: #fff;
 }
-.title__button--si{
+.title__button--si {
   width: 50%;
-  height:3rem;
+  height: 3rem;
   background: #5532c8;
   border: none;
   color: white;
   border-radius: 0.2rem;
   margin: 1rem auto;
 }
-.title__button--si:hover{
+.title__button--si:hover {
   opacity: 0.5;
 }
 .btn:hover {
-  background: #E4E4E2;
+  background: #e4e4e2;
 }
 
 .btn_red:hover {
   color: #2a2a2a;
-  background: #E4E4E2;
+  background: #e4e4e2;
 }
 
 a.btn {
@@ -2306,7 +2280,7 @@ a.btn {
 }
 
 a.btn_red {
-  color: #FFF;
+  color: #fff;
 }
 
 .one_half {
@@ -2328,10 +2302,10 @@ a.btn_red {
 }
 
 .popupHeader {
-  background: #F4F4F2;
+  background: #f4f4f2;
   position: relative;
   padding: 10px 20px;
-  border-bottom: 1px solid #DDD;
+  border-bottom: 1px solid #ddd;
   font-weight: bold;
 }
 
@@ -2355,7 +2329,7 @@ a.btn_red {
   clear: both;
   padding: 10px;
   margin-bottom: 10px;
-  background: #F4F4F2;
+  background: #f4f4f2;
   overflow: hidden;
 }
 
@@ -2365,17 +2339,17 @@ a.btn_red {
   padding: 5px 10px;
   margin-right: 10px;
   float: left;
-  color: #FFF;
+  color: #fff;
   font-size: 16px;
   text-align: center;
 }
 
 .social_login .fb .icon {
-  background: #3B5998;
+  background: #3b5998;
 }
 
 .social_login .google .icon {
-  background: #DD4B39;
+  background: #dd4b39;
 }
 
 .social_login .icon_title {
@@ -2388,7 +2362,7 @@ a.btn_red {
 }
 
 .social_login .social_box:hover {
-  background: #E4E4E2;
+  background: #e4e4e2;
 }
 
 .centeredText {
@@ -2430,7 +2404,7 @@ a.btn_red {
   display: block;
   width: 90%;
   padding: 10px;
-  border: 1px solid #DDD;
+  border: 1px solid #ddd;
   color: #666;
 }
 
@@ -2441,7 +2415,7 @@ a.btn_red {
   height: 22px;
 }
 
-.user_login input[type="checkbox"]+label {
+.user_login input[type="checkbox"] + label {
   float: left;
 }
 
@@ -2458,7 +2432,7 @@ a.btn_red {
   overflow: hidden;
   text-decoration: none;
   color: #4b8ef1;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 /* User Register Form */
@@ -2479,7 +2453,7 @@ a.btn_red {
   display: block;
   width: 100%;
   padding: 10px;
-  border: 1px solid #DDD;
+  border: 1px solid #ddd;
   color: #666;
 }
 
@@ -2490,7 +2464,7 @@ a.btn_red {
   margin-right: 8px;
 }
 
-.user_register input[type="checkbox"]+label {
+.user_register input[type="checkbox"] + label {
   float: left;
   color: #0d081e;
 }
@@ -2500,7 +2474,6 @@ a.btn_red {
   clear: both;
   overflow: hidden;
 }
-
 
 .title--estrategies {
   width: 99%;
@@ -2523,12 +2496,12 @@ a.btn_red {
   color: white;
 }
 
-.container--titulos{
+.container--titulos {
   width: 90%;
-    text-align: left;
-    max-width: 1150px;
-    margin: 0 auto;
-    margin-bottom: 2rem;
+  text-align: left;
+  max-width: 1150px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
 }
 
 /* 
@@ -2537,9 +2510,6 @@ a.btn_red {
 ---------------------------------------------
 */
 
-
-
-
 /*
 ---------------------------------------------
 responsive
@@ -2547,7 +2517,6 @@ responsive
 */
 
 @media (max-width: 1000px) {
-  
 }
 
 @media (max-width: 1200px) {
@@ -2575,94 +2544,103 @@ responsive
     font-size: 50px;
     margin-bottom: 20px;
   }
-
- 
 }
-#button--intro1{
+#button--intro1 {
   width: 100%;
   justify-content: flex-end;
   text-align: right;
   float: right;
   margin-right: 2rem;
 }
-#button--intro1 button{
+#button--intro1 button {
   border: none;
-    color: white;
-    border-radius: 0.3rem;
-    cursor: pointer;
-    background-color: #5532c8;
-    width: 100%;
-    max-width: 17rem;
-    height: 3rem;
+  color: white;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  background-color: #5532c8;
+  width: 100%;
+  max-width: 17rem;
+  height: 3rem;
 }
-#button--intro1 button:hover{
+#button--intro1 button:hover {
   opacity: 0.5;
 }
-.left{
+.left {
   justify-content: flex-start !important ;
 }
 
-#button--intro{
+#button--intro {
   width: 100%;
   justify-content: center;
   margin: 0 auto;
 }
-.button--derecha{
+.landing__sections{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  padding: 5rem 0;
+  padding-bottom: 0rem;
+
+}
+.landing__sections--title{
+  text-align: center;
+  margin-bottom: 6%;
+  margin-top: 3%;
+}
+.button--derecha {
   text-align: right;
   margin: 0;
 }
 @media (max-width: 992px) {
+  .landing__sections--title{
+    margin-bottom: 12%;
+}
   .header-area .main-nav .nav li {
     padding-left: 0;
     padding-right: 5px;
-
   }
-  #button--intro1{
+  #button--intro1 {
     width: 100%;
     justify-content: center;
     float: center;
     text-align: center;
     margin-right: 0;
   }
-  .container__suscribe{
+  .container__suscribe {
     display: flex;
     justify-content: flex-start;
   }
 
-  #button--intro{
+  #button--intro {
     width: 100%;
     justify-content: center;
-
   }
-  .imagelogo{
+  .imagelogo {
     max-width: 4rem;
   }
 
-  .title__zenefin p{
+  .title__zenefin p {
     display: none;
   }
-  .title--primary{
+  .title--primary {
     color: black;
   }
-  .future__finance{
+  .future__finance {
     width: 100%;
     margin: 0 auto;
   }
   h2 {
     font-size: calc(1.375rem + 1.5vw);
-
   }
 
   h3 {
-    font-size: calc(1.325rem + .9vw);
-
+    font-size: calc(1.325rem + 0.9vw);
   }
 
   .clients__button--list {
     margin: 0 3%;
     width: 10rem;
   }
-
 
   footer .section-heading h4 {
     color: #5532c8;
@@ -2672,7 +2650,7 @@ responsive
     width: 90%;
     margin-bottom: 3rem;
   }
-  .footer-widget ul{
+  .footer-widget ul {
     float: none;
   }
 
@@ -2681,7 +2659,6 @@ responsive
     background: transparent;
     border: none;
     margin-right: 2rem;
-
   }
 
   .financial__notices--box {
@@ -2708,7 +2685,7 @@ responsive
     width: 90%;
     height: 26rem;
   }
-  .footer-title{
+  .footer-title {
     color: white;
   }
   .fa-arrow-right {
@@ -2719,7 +2696,6 @@ responsive
     margin-top: 0;
     height: 25rem;
   }
- 
 
   .financial__image {
     background-position: bottom;
@@ -2741,7 +2717,6 @@ responsive
     width: 100%;
     height: 30%;
     margin-bottom: 2rem;
-
   }
 
   .financial__ahorro {
@@ -2780,7 +2755,6 @@ responsive
     z-index: 0;
     width: 100%;
     padding: 0 5rem;
-
   }
 
   .financial__white h3 {
@@ -2803,12 +2777,10 @@ responsive
     margin-left: 2%;
   }
 
-  
-    .about__button{
-      width: 44%;
-    }
- 
- 
+  .about__button {
+    width: 44%;
+  }
+
   .header-area {
     background-color: #fff;
   }
@@ -2817,24 +2789,22 @@ responsive
     display: none;
   }
 
-  
   .main-banner .left-content p {
-  width: 100%;
-  color: #6e6b78;
-  margin: 1rem 0;
+    width: 100%;
+    color: #6e6b78;
+    margin: 1rem 0;
   }
-  #container__inicio--country{
+  #container__inicio--country {
     width: 100%;
   }
-  
+
   .main-banner .left-content {
     margin: 0 auto;
   }
- 
-  .future__finance{
+
+  .future__finance {
     width: 100%;
     padding-bottom: 0;
-
   }
 
   form#contact {
@@ -2848,7 +2818,7 @@ responsive
   .main-banner .left-content {
     width: 100vw;
   }
- 
+
   .main-banner {
     text-align: center;
     padding-top: 5rem;
@@ -2865,7 +2835,7 @@ responsive
     margin: 30px auto 0px auto;
     text-align: center;
   }
-  .main-banner .right-image img{
+  .main-banner .right-image img {
     width: 550px;
   }
   .features-item {
@@ -2884,7 +2854,6 @@ responsive
   .about-left-image img {
     margin-right: 0px;
     margin-bottom: 45px;
-    ;
   }
 
   .about-us .box-item {
@@ -2947,111 +2916,128 @@ responsive
     padding-top: 25rem;
     margin-top: 0;
   }
+  .aurosocials h1 {
+    font-size: 45px;
+  }
+
+  .aurosocials h2 {
+    font-size: 34px;
+  }
+
+  .aurosocials p {
+    font-size: 18px;
+  }
+  .aurasocials h1 {
+    font-size: 40px;
+  }
+  .aurasocials h2 {
+    font-size: 27px;
+    margin-bottom: 0.5rem;
+  }
 }
 
 @media (max-width: 767px) {
   .aurasocials h1 {
     font-size: 31px;
-}
+  }
 
-.aurosocials h2 {
+  .aurosocials h2 {
     font-size: 34px;
     text-align: center;
-}
-.aurosocials h4{
+  }
+  .aurosocials h4 {
     font-size: 3rem;
-}
-.aurosocials p {
+  }
+  .aurosocials p {
     font-size: 18px;
     text-align: center;
-}   
-.aurosocials h5{
-    font-size: 1rem;
-}
-  .app h3{
-   font-size:  calc(1.525rem + .9vw);
   }
-  .footer-widget{
+  .aurosocials h5 {
+    font-size: 1rem;
+  }
+  .app h3 {
+    font-size: calc(1.525rem + 0.9vw);
+  }
+  .footer-widget {
     float: left;
     text-align: left;
     padding-left: 0.5rem;
   }
-  .information{
+  .information {
     padding-top: 7rem;
   }
 
-  .strategygoals__buttons a{
+  .strategygoals__buttons a {
     margin-right: 8rem;
   }
-  .title--strategy{
-    font-size: calc(1.325rem + .9vw);
-
+  .title--strategy {
+    font-size: calc(1.325rem + 0.9vw);
   }
-  .clients__texto h2{
-    font-size: calc(1.325rem + .9vw);
-    
+  .clients__texto h2 {
+    font-size: calc(1.325rem + 0.9vw);
   }
-  .about__title h2{
-    padding:  0 0.5rem;
-    font-size: calc(1.325rem + .9vw);
+  .about__title h2 {
+    padding: 0 0.5rem;
+    font-size: calc(1.325rem + 0.9vw);
   }
-  .about__container{
+  .about__container {
     padding: 2.9rem 0;
     padding-bottom: 2.9rem;
   }
-  .main-banner{
+  .main-banner {
     padding-top: 5rem;
     height: 100%;
     text-align: center;
   }
   .main-banner .left-content p {
-  width: 100%;
-  color: #6e6b78;
-  margin: 1rem 0;
+    width: 100%;
+    color: #6e6b78;
+    margin: 1rem 0;
   }
-  #container__inicio--country{
+  #container__inicio--country {
     width: 100%;
   }
-  
+
   .main-banner .left-content {
     margin: 0;
   }
-  .future__finance{
+  .future__finance {
     width: 90%;
     padding-bottom: 0;
     margin: 0;
-
   }
-  .header-area{
+  .header-area {
     height: 80px;
   }
-  .container--inicio{
-    padding:  0;
+  .container--inicio {
+    padding: 0;
     padding-bottom: 0;
   }
-  #container__inicio--country{
+  #container__inicio--country {
     color: #6e6b78;
   }
-  .title--primary{
+  .title--primary {
     color: #000;
-    line-height:1.2;
+    line-height: 1.2;
     font-weight: 700;
     font-size: 32px;
   }
-  .container--inicio .row{
+  .container--inicio .row {
     margin-left: 0;
     margin-right: 0;
     padding: 0;
     width: 100%;
   }
-  .padding{
+  .padding {
     padding: 0;
   }
-  
-  .title__button--si{
+  .landing__sections--title{
+    margin-bottom: 18%;
+} 
+  .title__button--si {
     width: 74%;
-    margin:1.5rem auto;
-    height:3.4rem;
+    margin: 1.5rem auto;
+    height: 3.4rem;
     background: #5532c8;
     border: none;
     color: white;
@@ -3109,7 +3095,6 @@ responsive
     width: 100%;
   }
 
-  
   .financial__ahorro {
     height: auto;
     overflow: hidden;
@@ -3124,7 +3109,6 @@ responsive
     height: auto;
     background-color: white;
     padding-top: 3rem;
-
   }
   .main-banner .right-image img {
     width: 100%;
@@ -3145,9 +3129,7 @@ responsive
     height: 4rem;
     margin: 1.2rem;
     width: 95%;
-
   }
-
 
   .financial__white h3 {
     width: 100%;
@@ -3180,7 +3162,6 @@ responsive
   .financial__morado {
     height: 20rem;
     margin-bottom: 2rem;
-
   }
 
   .financial__morado img {
@@ -3199,9 +3180,9 @@ responsive
     background-position: bottom;
     background-image: url(/Group\ 38.png);
   }
-  #button--intro1{
+  #button--intro1 {
     width: 100%;
-    margin-right:0;
+    margin-right: 0;
   }
   .financial__container {
     height: 30rem;
@@ -3211,26 +3192,24 @@ responsive
   .financial--titulos {
     text-align: center;
   }
-  .footer-widget--social{
+  .footer-widget--social {
     display: flex;
     justify-content: cWenter;
     width: 100%;
   }
   h2 {
     font-size: calc(1.375rem + 1.5vw);
-
   }
 
   h3 {
-    font-size: calc(1.325rem + .9vw);
-
+    font-size: calc(1.325rem + 0.9vw);
   }
 
   .scroll-to-section a {
     margin-right: 0;
   }
-  
-  .title__estrategy--first{
+
+  .title__estrategy--first {
     margin-top: 2.5rem;
   }
 
@@ -3239,9 +3218,7 @@ responsive
     margin: 0 auto;
     margin: 1.5rem auto;
     height: 3.4rem;
-
   }
-
 
   .banderas {
     z-index: 10;
@@ -3251,11 +3228,10 @@ responsive
     background-color: #f5f5f7;
   }
 
-  
-  .imagelogo{
+  .imagelogo {
     max-width: 4rem;
   }
-  
+
   .about__button {
     width: 90%;
   }
@@ -3264,8 +3240,6 @@ responsive
     background-size: cover;
     height: 8rem;
   }
-
-  
 
   .the-clients .naccs .menu div {
     text-align: center;
@@ -3332,7 +3306,7 @@ responsive
     margin-bottom: -20px;
     display: block;
   }
-  #foooter--nosotros{
+  #foooter--nosotros {
     margin-top: 0;
   }
 
@@ -3349,7 +3323,7 @@ responsive
   .about-us .right-image {
     margin-top: 30px;
   }
-/* 
+  /* 
   .service-item .icon {
     float: none;
     margin-right: 0px;
@@ -3387,7 +3361,6 @@ responsive
   .the-clients .nacc .thumb .down-content {
     text-align: center;
   }
-
 
   .our-portfolio .section-heading,
   .about-us .section-heading,
@@ -3456,15 +3429,13 @@ responsive
   .header-area .main-nav .menu-trigger {
     top: 25px;
   }
-  .footer{
-  background-position-x: -89rem;
-
+  .footer {
+    background-position-x: -89rem;
   }
-  .fa-arrow-right{
+  .fa-arrow-right {
     display: none;
   }
-  #button--intro{
+  #button--intro {
     justify-content: center !important;
   }
 }
-

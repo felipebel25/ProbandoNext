@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Image from "next/image";
-import styles from '../../styles/components/Banner.module.css'
+import styles from '../../styles/components/home/Banner.module.css'
 const Banner = ({ countryName = "bo" }) => {
   const validacionCountry =
     countryName === "bo"
@@ -92,6 +92,7 @@ const Banner = ({ countryName = "bo" }) => {
                       height='620px'
                       layout='raw'
                       src='/group_18.png'
+                      priority
                     />
                   </div>
                 </div>

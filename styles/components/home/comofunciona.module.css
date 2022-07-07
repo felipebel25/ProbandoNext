@@ -1,0 +1,283 @@
+/*
+---------------------------------------------
+comoFunciona
+-----------------------------------------------
+*/
+.comoFunciona {
+    width: 100%;
+    height: 49rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0;
+    padding-right: 0;
+    background-color: white;
+    background-image: url(/Group\ 55.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50rem 90%;
+
+}
+
+
+/* .strategygoals__title {
+    width: 99%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+} */
+
+.comoFunciona__list {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 90%;
+    height: 95%;
+    max-width: 1200px;
+    padding: 0 2rem;
+    display: flex;
+    margin: 0 auto;
+}
+
+.comoFunciona__ul {
+    padding-top: 0;
+    padding-right: 0.2rem;
+    width: 50%;
+    z-index: 4;
+}
+
+.strategygoals__image {
+    width: 50%;
+
+}
+
+
+.container--inicio {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+    margin: 0 auto;
+    max-width: 2800px;
+}
+
+#button--intro {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+#button--intro button {
+    border: none;
+    color: white;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    background-color: #5532c8;
+    width: 100%;
+    max-width: 17rem;
+    height: 3rem;
+    margin-top: 1rem;
+}
+
+#button--intro button:hover {
+    opacity: 0.5;
+}
+
+.comoFunciona__item {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.comoFunciona__item img {
+    width: 2rem;
+    min-width: 2rem;
+    max-width: 2rem;
+    margin-right: 1rem;
+}
+
+.comoFunciona__item p {
+    font-weight: 300;
+    color: #6e6b78;
+    margin-bottom: 0;
+    text-align: left;
+
+}
+
+.comoFunciona__buttons {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: flex-start;
+
+}
+
+.comolohacemos__title {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 10rem;
+    text-align: center;
+}
+
+.comolohacemos__title h3 {
+    margin-bottom: 1.8rem;
+}
+.comoFunciona__buttons  a{
+    width: 100%;
+    margin-right: 5rem ;
+}
+.clients__button__list {
+    border: none;
+    color: white;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    background-color: #5532c8;
+    width: 100%;
+    max-width: 14rem;
+    margin-top: 1rem;
+    height: 3rem;
+    margin-right: 2rem;
+}
+.clients__button__list:hover {
+    opacity: 0.5;
+}
+
+@media (max-width: 1200px) {
+    .comoFunciona {
+        background-size: 50%;
+    }
+}
+
+@media (max-width: 992px) {
+    .comolohacemos__title {
+        margin-bottom: 1rem;
+        height: 6rem;
+    }
+
+    .comolohacemos__title p {
+        display: none;
+    }
+
+    .comoFunciona__buttons {
+        margin-top: 1rem;
+    }
+
+    #button--intro {
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .comoFunciona__buttons a {
+        margin-right: 5rem;
+        width: 100%;
+    }
+
+    .comoFunciona {
+        background-size: 55%;
+        height: auto;
+    }
+
+    .title__estrategies {
+        font-weight: 500;
+        line-height: 1.2;
+        font-size: 38px;
+    }
+
+    .comolohacemos__title p {
+        color: #6e6b78;
+    }
+
+    .strategygoals__img {
+        display: none;
+    }
+
+    .comoFunciona__ul {
+        width: 57%;
+        padding-right: 0;
+    }
+
+    .comoFunciona__list {
+        height: 70%;
+        padding-left: 0;
+        margin-bottom: 2rem;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    .comoFunciona__buttons a {
+        margin-right: 1.5rem;
+        width: 100%;
+    }
+
+    .comolohacemos__title {
+        margin-bottom: 10rem;
+    }
+
+    .comolohacemos__title {
+        margin-bottom: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .comolohacemos__title p {
+        color: #6e6b78;
+        display: none;
+    }
+
+    .title__estrategies h3 {
+        margin-bottom: 2rem;
+    }
+
+    .comolohacemos__title h3 {
+        margin-bottom: 1rem;
+        padding: 0 1rem;
+    }
+
+    .strategygoals__buttons a {
+        margin-right: 8rem;
+    }
+
+    .comoFunciona {
+        background-color: none;
+        background: none;
+        width: 100%;
+        height: 100%;
+        border: none;
+
+        padding: 3rem 0;
+        border-radius: 0;
+    }
+
+    .comoFunciona__ul {
+        width: 100%;
+    }
+
+    .comoFunciona__list {
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    .title__estrategies {
+        font-weight: 600;
+        line-height: 1.2;
+    }
+
+    .comoFunciona__item p {
+        color: #666;
+
+    }
+
+
+}

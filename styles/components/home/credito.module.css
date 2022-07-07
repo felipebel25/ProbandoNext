@@ -1,0 +1,238 @@
+.credito {
+    background-color: #f5f5f7;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .clients__button {
+    border: none;
+    color: white;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    background-color: #5532c8;
+    width: 13rem;
+  
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-left: 0.2rem;
+    height: 3rem;
+    min-height: 3rem;
+  }
+  
+  .clients__button:hover {
+    opacity: 0.5;
+  }
+  
+  .clients__button--list {
+    border: none;
+    color: white;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    background-color: #5532c8;
+    width: 100%;
+    max-width: 14rem;
+    margin-top: 1rem;
+    height: 3rem;
+    margin-right: 2rem;
+  }
+  
+  .clients__button--list:hover {
+    opacity: 0.5;
+  }
+  
+  .credito__subline {
+    font-size: 16px;
+    margin-bottom: -1px;
+  
+  }
+  
+  .credito__texto {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 5;
+    position: relative;
+    z-index: 1;
+    padding-left: 3rem;
+  
+  }
+  
+  .credito__texto h2 {
+    font-size: 50px;
+  }
+  
+  .credito__time__phone {
+    width: 30rem;
+    height: 100%;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .credito__time__phoneimg {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+    margin-left: 0;
+  
+  
+  }
+  
+  .clients__texto--time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-end;
+    width: 40%;
+    margin-left: 5rem;
+  }
+  
+  .credito__time {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    height: 37rem;
+    border-radius: 2rem;
+    display: flex;
+    padding: 3.2rem 0;
+    justify-content: space-evenly;
+  }
+  .credito__button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .credito__button p {
+    width: 100%;
+    margin-left: 0.6rem;
+    margin-bottom: 0;
+  }
+  #button--intro button{
+    margin-top: 0;
+  }
+  
+  @media (max-width: 992px) {
+    .credito__texto h2 {
+      font-size: calc(1.325rem + .9vw);
+      text-align: left;
+  
+  
+    }
+    .credito__texto p{
+      text-align: left;
+  
+    }
+    .credito {
+      padding: 0;
+    }
+  
+    .credito__texto {
+      padding-left: 3%;
+      padding-right: 0;
+      width: 59%;
+    }
+  
+    .credito__time__phone {
+      width: 39%;
+      margin-left: 0;
+      height: auto;
+      display: flex;
+      align-items: flex-end;
+      align-items: center;
+    }
+  
+    .credito__time__phone img {
+      width: 350px;
+      height: auto;
+      max-width: 390px;
+      margin: 0;
+      padding: 0;
+      margin: 0 auto;
+    }
+  
+    .credito__time {
+      height: auto;
+    }
+  
+    .clients__texto--time {
+      padding-left: 3%;
+      padding-right: 0;
+      width: 59%;
+      padding-top: 10%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .credito__time__phone img {
+      width: 336px;
+      height: auto;
+      max-width: 390px;
+      margin: 0;
+      padding: 0;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+    }
+    .credito__button p {
+      width: 100%;
+      margin-left: 2rem;
+      margin-bottom: 0;
+      display: none;
+    }
+    .credito__texto {
+      width: 100%;
+      height: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin-top: 1rem;
+      padding: 0 1.2rem;
+    }
+  
+    .credito__texto #button--intro {
+      width: 100%;
+      justify-content:  center  !important;
+    }
+  
+    .credito__time {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      margin-top: 0;
+      padding: 0;
+      padding: 2rem 0;
+  
+    }
+  
+    .credito__time__phone {
+      width: 100%;
+      height: 50%;
+      margin-left: 0;
+  
+      display: flex;
+      align-items: flex-end;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  
+  
+    .clients__texto--time {
+      height: auto;
+      width: 90%;
+      margin: 2rem auto;
+  
+  
+      padding-left: 0;
+  
+    }
+  
+    .credito__time__phone img {
+      width: 95%;
+    }
+  
+  }

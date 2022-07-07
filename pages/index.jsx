@@ -2,8 +2,14 @@ import React from "react";
 import Head from "next/head";
 
 import Banner from "../components/Home/Banner";
-
-
+import Mision from "../components/Home/Mision";
+import ComoFunciona from "../components/Home/ComoFunciona";
+import Estrategias from "../components/Home/Estrategias";
+import Personalidades from "../components/Home/Personalidades";
+import AhorroInversion from "../components/Home/AhorroInversion";
+import Credito from "../components/Home/Credito";
+import Intereses from "../components/Home/Intereses";
+import Servicios from "../components/Home/Servicios";
 
 const Home = () => {
   return (
@@ -28,6 +34,14 @@ const Home = () => {
         </Head>
         <div className="app">
           <Banner />
+          <Mision />
+          <ComoFunciona />
+          <Estrategias />
+          <Personalidades />
+          <AhorroInversion />
+          <Credito />
+          <Intereses />
+          <Servicios></Servicios>
         </div>
       </div>
     </>
