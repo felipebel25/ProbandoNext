@@ -10,8 +10,8 @@ const Mision = () => {
                     <img src='/coinjar.jpg' alt={'planta'} />
                 </div>
                 <div className={styles.mision__text}>
-                    <p  className="mision--p">NUESTRA MISIÓN</p>
-                    <h2 className="mision--info">Que todos puedan dar forma a su futuro financiero, con el conocimiento necesario e independiente de sus activos financieros.</h2>
+                    <p  className={styles.mision__p}>NUESTRA MISIÓN</p>
+                    <h2 className={styles.mision__info}>Que todos puedan dar forma a su futuro financiero, con el conocimiento necesario e independiente de sus activos financieros.</h2>
                 </div>
             </div>
         </div>

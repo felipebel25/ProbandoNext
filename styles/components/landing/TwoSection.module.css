@@ -1,0 +1,156 @@
+.landing__02 {
+  width: 80%;
+  height: auto;
+  border-radius: 2.8rem;
+  max-width: 991px;
+  margin: 9rem auto;
+}
+
+.landing__02 h4 {
+  width: 0;
+  height: 0;
+  position: relative;
+  right: -94%;
+  bottom: 3rem;
+  font-size: 5rem;
+  color: rgba(141, 141, 141, 0.601);
+  z-index: 1;
+  font-family: "Righteous";
+}
+.landing__02__container {
+  width: 100%;
+  display: flex;
+  height: 358px;
+  flex-direction: row-reverse;
+  align-items: center;
+  position: relative;
+  z-index: 4;
+  padding: 1rem;
+  background-color: #5532c810;
+  border-radius: 2rem;
+}
+.landing__02__container h2 {
+  font-size: 35px;
+  margin-bottom: 1rem;
+}
+.circle__2 {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.circle__2 h4 {
+  position: relative;
+  left: -3rem;
+  width: 0;
+  font-size: 5rem;
+}
+
+.circle__2 img {
+  width: 80%;
+  height: auto;
+}
+.landing__02__text {
+  width: 60%;
+  display: flex;
+  padding-right: 2rem;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 2.5rem;
+}
+.landing__button {
+  width: 24rem;
+  border: none;
+  color: white;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  background-color: #5532c8;
+  width: 40%;
+  min-width: 20rem;
+  max-width: 10rem;
+  height: 3rem;
+}
+
+.landing__button:hover {
+  opacity: 0.5;
+}
+@media (max-width: 992px) {
+  .landing__02 {
+    margin: 10% auto;
+  }
+  .landing__02 h4 {
+    right: -91%;
+  }
+  .landing__02__container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .circle__2 h4 {
+    left: -4rem;
+  }
+  .circle__2 h4 {
+    position: static;
+    color: #5532c8;
+  }
+  .landing__02__text {
+    padding: 0 1rem;
+  }
+  .landing__button {
+    min-width: 18rem;
+  }
+}
+@media (max-width: 767px) {
+  .landing__02 {
+    padding: 1rem 0;
+    height: auto;
+  }
+  .landing__02__text {
+    width: 100%;
+    margin-top: 4rem;
+    padding-right: 0;
+    margin-bottom: 2rem;
+    padding-left: 0;
+  }
+  .landing__02 h4 {
+    right: -78%;
+    bottom: 2.5rem;
+    font-size: 4rem;
+  }
+
+  .landing__02__container {
+    padding: 0;
+    width: 100%;
+    padding: 0 1rem;
+    flex-direction: column-reverse;
+    padding-bottom: 1rem;
+    height: auto;
+  }
+  .circle__2 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .circle__2 img {
+    max-width: 20rem;
+  }
+
+  .circle__2 h4 {
+    position: relative;
+    width: 0;
+  }
+  .landing__button {
+    width: 100%;
+    border: none;
+    color: white;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    background-color: #5532c8;
+    min-width: auto;
+    max-width: none;
+    height: 3rem;
+    margin: 0 auto;
+  }
+}

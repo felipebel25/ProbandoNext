@@ -8,7 +8,7 @@ const Estrategias = () => {
             <div className="container title__estrategy--first">
                 <div className="row">
                     <div className="col-lg-8 offset-lg-2">
-                        <div className="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div className={`${styles.section__heading}  section__heading wow fadeInDown`} data-wow-duration="1s" data-wow-delay="0.5s">
                             <h3 className='title--strategy'>La estrategia <em>adecuada </em> para cada <em>objetivo</em></h3>
                             <Image layout='raw'  width='500px' height='150px' src='/heading-line-dec.png' />
                             <p>Ya sea que quieras construir tu casa, contar con una pensión o planear el presupuesto de tus
@@ -18,7 +18,7 @@ const Estrategias = () => {
                 </div>
             </div>
             <div className="container">
-                <h2 className="title--estrategies">La forma más rápida de lograr una planificación financiera increíblemente
+                <h2 className={styles.title__estrategies}>La forma más rápida de lograr una planificación financiera increíblemente
                     inteligente</h2>
                 <div className="row cards">
                     <div className="col-lg-3 ">

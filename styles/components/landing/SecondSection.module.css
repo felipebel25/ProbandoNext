@@ -58,11 +58,12 @@
   font-size: 35px;
   margin-bottom: 1rem;
 }
+
 @media (max-width: 992px) {
-    .landing__opurtunites h2 {
-        font-size: 27px;
-        margin-bottom: 1rem;
-      }
+  .landing__opurtunites h2 {
+    font-size: 27px;
+    margin-bottom: 1rem;
+  }
   .landing__circle {
     padding-right: 0;
     width: 53%;
@@ -73,6 +74,7 @@
   .landing__opurtunites {
     padding-right: 1rem;
   }
+
 }
 @media (max-width: 736px) {
   .landing__two__container {
@@ -103,4 +105,5 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
+ 
 }

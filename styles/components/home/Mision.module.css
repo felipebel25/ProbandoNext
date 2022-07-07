@@ -20,7 +20,7 @@
     background-color: #f5f5f7;
 }
 
-.mision--p {
+.mision__p {
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 3px;
@@ -29,7 +29,7 @@
     color: #838188;
 }
 
-.mision--info {
+.mision__info {
     color: #212529;
     font-size: 40px;
     line-height: 1.2;
@@ -68,7 +68,7 @@
         flex-direction: column;
         margin-top: 2rem;
     }
-    .mision--info {
+    .mision__info {
         color: #212529;
         font-size: 38px;
         line-height: 1.2;
@@ -90,7 +90,7 @@
         border-radius: 0;
         box-shadow: none;
       }
-      .mision--info{
+      .mision__info{
         font-size: 22px;
       }
       .mision__container{

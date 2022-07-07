@@ -6,7 +6,7 @@ import React from 'react'
 import styles from  '../../styles/components/home/servicios.module.css'
 
 
-const Servicios = ({countryName ='bo', modalCountry}) => {
+const Servicios = ({countryName , modalCountry}) => {
     const validacionCountry = countryName === 'bo' ? 'Bolivia' : countryName === 'mx' ?  'México' : countryName === 'co' ? 'Colombia' :""
   
     return (
@@ -52,18 +52,12 @@ const Servicios = ({countryName ='bo', modalCountry}) => {
                         } */}
                 </div>
                 <div className={styles.servicios__image}>
-                    <img src={countryName === 'bo' ? '/mockupAppAura.png' : 'banksMex'} alt='imagen de telefono con bancos app aura' />
+                    <img src={countryName === 'bo' ? '/mockupAppAura.png' : '/banksmex.png'} alt='imagen de telefono con bancos app aura' />
                 </div>
             </div>
         </div>
     )
 }
-// Servicios.propTypes = {
-//     countryName: PropTypes.string,
-// }
-// Servicios.defaultProps = {
-//     countryName: "",
-// }
 
 
 export default Servicios

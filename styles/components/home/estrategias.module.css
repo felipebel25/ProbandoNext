@@ -11,7 +11,7 @@ Services Style
     position: relative;
 }
 
-.services .section-heading p {
+.services .section__heading p {
     margin-top: 10px;
     margin-left: 10%;
     letter-spacing: 0px !important;
@@ -25,12 +25,12 @@ Services Style
 }
 
 
-.services .section-heading {
+.services .section__heading {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.services .section-heading .line-dec {
+.services .section__heading .line-dec {
     margin: 0 auto;
 }
 
@@ -122,6 +122,14 @@ Services Style
     background-size: cover;
 }
 
+.title__estrategies {
+    margin: 0 auto 2rem;
+    max-width: 1200px;
+    text-align: center;
+    width: 99%;
+
+}
+
 @media (max-width: 992px) {
     .services .naccs .menu div {
         font-size: 15px;
@@ -150,7 +158,7 @@ Services Style
 }
 
 @media (max-width: 767px) {
-    .services .section-heading p {
+    .services .section__heading p {
         margin: 0;
         letter-spacing:  0[x];
     }
@@ -213,5 +221,16 @@ Services Style
     .services ul.nacc li .right-image img {
         float: none;
     }
-
+    .title__estrategies {
+        font-weight: 600;
+        line-height: 1.2;
+        width: 99%;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 0;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-size: 27px;
+        
+    }
 }

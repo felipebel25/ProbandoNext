@@ -3,8 +3,11 @@ import Head from "next/head";
 import FirstSection from "../../components/mipyme/FirstSection";
 import SecondSection from "../../components/mipyme/SecondSection";
 import OneSection from "../../components/mipyme/OneSection";
+import TwoSection from "../../components/mipyme/TwoSection";
+import FourdSection from "../../components/mipyme/FourthSection";
 const about = () => {
   const [modalCountry, setModalCountry] = useState(false);
+  
   return (
     <>
       <div className="aurasocials">
@@ -58,10 +61,53 @@ const about = () => {
                 "Con tu información y la de tu negocio ayudaremos a armar tu expediente financiero."
               }
               buttonText={"Regístrate"}
-              imageUrl='/01.kyc.png'
+              imageUrl="/01.kyc.png"
               openModal={setModalCountry}
             />
+            <TwoSection
+              number={"02"}
+              title={"Conoce tu perfil crediticio"}
+              text={
+                "Descubre tu reporte de InfoCred, aprende como se interpreta, como puedes mejorarlo y sacar lo mejor de él."
+              }
+              buttonText={"Quiero AURA"}
+              imageUrl={"/02.score.png"}
+              openModal={setModalCountry}
+            />
+            <OneSection
+              title={"Recibe tips de educación financiera"}
+              text={
+                "De manera periódica recibirás mensajes cortos para tener bajo control tus finanzas personales y las de tu negocio."
+              }
+              number={"03"}
+              buttonText={"Regístrate"}
+              imageUrl='/03.tips.png'
+              openModal={setModalCountry}
+            />
+
+            <TwoSection
+              title={"Conoce los servicios financieros"}
+              text={
+                "En la palma de la mano, recibe recomendaciones claras sobre servicios de crédito disponibles en el mercado, sus tasas de interés y productos de inversión, que hagan sentido con tus requerimientos y perfil."
+              }
+              number={"04"}
+              buttonText={"Regístrate"}
+              imageUrl="/04.Serv_fin.png"
+              openModal={setModalCountry}
+            />
+            <OneSection
+              title={"Toma decisiones que ayuden a crecer tu negocio"}
+              text={
+                "Con tu perfil financiero, el conocimiento de como manejar mejor tus finanzas y con los servicios financieros que se ajustan a tus necesidades, podrás tomar la mejor decisión de como hacer crecer tu negocio. "
+              }
+              number="05"
+              buttonText={"Regístrate"}
+              imageUrl="/05.Toma_de_dec.png"
+              openModal={setModalCountry}
+            />
+
           </main>
+          <FourdSection></FourdSection>
         </main>
       </div>
     </>

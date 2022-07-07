@@ -5,7 +5,7 @@
 .personalidades__container p {
     color: #0d081e;
     word-wrap: break-word;
-    padding: 1%;
+    padding: 1% 1.2rem;
     text-align: center;
     width: 90%;
     max-width: 1200px;

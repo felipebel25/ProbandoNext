@@ -272,6 +272,14 @@ comoFunciona
     .title__estrategies {
         font-weight: 600;
         line-height: 1.2;
+        width: 99%;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 0;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-size: 27px;
+        
     }
 
     .comoFunciona__item p {
