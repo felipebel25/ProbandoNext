@@ -1,39 +1,36 @@
 import React, { useEffect, useState } from 'react';
-import {  useLocation } from 'react-router-dom';
-import { HashLink  } from 'react-router-hash-link';
+import { useRouter } from "next/router";
 
 
-import logoAuraBlanco from '../assets/images/Aura_logo_white.png';
-import facebookLogo from '../assets/images/facebook.svg';
-import instaLogo from '../assets/images/social media.svg';
 
-import { eventAnalytics } from '../helpers/hooks/usePageAnalytics';
-import { getYear } from '../helpers/getYear';
-
+// import { eventAnalytics } from '../helpers/hooks/usePageAnalytics';
+import { getYear } from '../../helpers/getYear';
+import Link from 'next/link';
 
 const Footer = ({ handleModal, countryName }) => {
-  const location = useLocation()
+  const router = useRouter()
+  const country =
+    router.query.pais === "co"
+      ? "/co"
+      : router.query.pais === "bo"
+      ? "/bo"
+      : "/mx";
+
+
+
   const [year, setYear] = useState('');
-  const scrollWithOffset = (el, offset) => {
-    const elementPosition = el.offsetTop - offset;
-    window.scroll({
-      top: elementPosition,
-      left: 0,
-      behavior: "smooth"
-    })
-  }
+
   const socialAnalytics = (socialMedia) => {
-    eventAnalytics({
-      name:socialMedia,
-      action: `${socialMedia} button`,
-      category: "redes sociales"
-    })
+    // eventAnalytics({
+    //   name:socialMedia,
+    //   action: `${socialMedia} button`,
+    //   category: "redes sociales"
+    // })
+    console.log('hola');
   }
   useEffect(() => {
     setYear(getYear())
   }, [])
-  const validateRoute = location.pathname.includes('/co') ? "/co"
-    : location.pathname.includes('/bo') ? '/bo' : '/mx'
 
   return (
     <>
@@ -53,8 +50,8 @@ const Footer = ({ handleModal, countryName }) => {
                   <div className="col-lg-6 col-sm-6">
                     <fieldset>
                       <button type="button" className="main-button suscribe__button" onClick={() => {
-                        handleModal(true)
-                        socialAnalytics('Boletin')
+                        handleModal(s => !s)
+                        // socialAnalytics('Boletin')
                       }}>Suscríbase <i className="fa fa-angle-right" /></button>
                     </fieldset>
                   </div>
@@ -78,17 +75,13 @@ const Footer = ({ handleModal, countryName }) => {
                 <h4>Mapa</h4>
                 <ul>
                   <li>
-                    <HashLink to={`${validateRoute}#top`}>INICIO</HashLink>
+                    <Link href={`${country}/#top`} scroll={false}>INICIO</Link>
                   </li>
                   <li className="scroll-to-section">
-                    <HashLink
-                      scroll={el => scrollWithOffset(el, 86)}
-                      to={`${validateRoute}#mision`}>FILOSOFIA</HashLink>
+                    <Link href={`${country}/#mision`}>FILOSOFIA</Link>
                   </li>
                   <li>
-                    <HashLink
-                      scroll={el => scrollWithOffset(el, 80)}
-                      to={`${validateRoute}#comolohacemos`}>COMO FUNCIONA</HashLink>
+                    <Link href={`${country}/#comolohacemos`}>COMO FUNCIONA</Link>
 
                   </li>
 
@@ -104,13 +97,13 @@ const Footer = ({ handleModal, countryName }) => {
                     onClick={() => { socialAnalytics('Facebook') }}
                     href="https://www.facebook.com/aura.Bolivia01" target='_blank'
                   >
-                    <button><img src={facebookLogo} /></button>
+                    <button><img src='/facebook.svg' /></button>
                   </a>
                   <a
                     onClick={() => { socialAnalytics('Instagram') }}
                     href="https://www.instagram.com/aura.financial/" target='_blank'
                   >
-                    <button><img src={instaLogo} /></button>
+                    <button><img src='/social media.svg' /></button>
                   </a>
                 </div>
               </div>
@@ -119,7 +112,7 @@ const Footer = ({ handleModal, countryName }) => {
               <div className="footer-widget">
                 <h4 id='foooter--nosotros'>Nosotros</h4>
                 <div className="logo">
-                  <img src={logoAuraBlanco} />
+                  <img src='/Aura_logo_white.png' />
                 </div>
                 <p>Hacemos que las finanzas sean accesibles para todos. Estructurar tus finanzas personales puede impulsar
                   tu vida. Menos estrés y ansiedad, más libertad y sueños. Te apoyamos durante este viaje con algoritmos

@@ -1,0 +1,63 @@
+/* 
+  doopler
+*/
+
+.dopler{
+    width: 100%;
+    height: 100vh;
+    padding: 1% 0;
+    position:fixed;
+    z-index: 99;
+ 
+}
+.dopler__container{
+    width: 42rem;
+    margin: 0 auto;
+    height: 90%;
+    position: relative;
+    z-index: 9999;
+}
+.dopler__out{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 9998;
+    background-color: rgba(234, 100, 241, 0.476);
+    overflow: hidden;
+}
+._dp_container-content{
+    margin-top: -2.4rem;
+    background: none !important;
+    max-height: 100%;
+    height: 100%;
+
+}
+
+.dopler__button{
+    position: relative;
+    z-index: 4;
+    background-color: #fdf2ff;
+    width: 100%;
+    height: 3rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dopler__button button{
+    background-color: #5532c8;
+    color: white;
+    border: none;
+    width: 4rem;
+    width: 4rem;
+
+}
+._dp_container-HTMLForm{
+    margin-top:  32px !important;
+}
+@media (max-width: 767px) {
+    .dopler__container{
+        width: auto;height: 100%;
+    }
+}

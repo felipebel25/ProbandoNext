@@ -20,6 +20,7 @@ const about = () => {
       <div className="aurasocials">
         <Head>
           <title>Aura Information | AURA Financial</title>
+          <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
           <meta
             name="viewport"
             content="initial-scale=1.0, width=device-width"
@@ -37,6 +38,11 @@ const about = () => {
             content="Nuestro objetivo es ayudarte a crecer tu negocio con servicios financieros a tu medida"
           />
           <meta property="og:image" content="/landing_screenshot.png" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap"
+            rel="stylesheet" />
         </Head>
         <HeaderMyPyme />
         <main className="landing">
@@ -92,7 +98,6 @@ const about = () => {
               imageUrl="/03.tips.png"
               openModal={setModalCountry}
             />
-
             <TwoSection
               title={"Conoce los servicios financieros"}
               text={
@@ -114,7 +119,7 @@ const about = () => {
               openModal={setModalCountry}
             />
           </main>
-          <FourdSection></FourdSection>
+          <FourdSection />
         </main>
       </div>
     </>

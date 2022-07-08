@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import Head from "next/head";
 
 import Banner from "../components/Home/Banner";
@@ -12,12 +12,37 @@ import Intereses from "../components/Home/Intereses";
 import Servicios from "../components/Home/Servicios";
 import Header from "../components/Navbar/Header";
 import { useRouter } from "next/router";
-
+import Footer from "../components/Home/Footer";
+import dynamic from "next/dynamic";
+const Dopper = dynamic(() => import("../components/Doppler/Doppler"), {
+  ssr: false,
+});
 const Home = () => {
-  const router = useRouter()
-  const countryName  = (router.query.pais);
-  const validacionCountry = countryName === 'bo' ? 'Bolivia' : countryName === 'mx' ? 'México' : countryName === 'co' ? 'Colombia' : ""
+  const [headerActive, setHeaderActive] = useState(true);
+  const [modal, setModal] = useState(false);
 
+  const handleModal = () => {
+    setModal(!modal);
+  };
+  const router = useRouter();
+  const countryName = router.query.pais;
+  const validacionCountry =
+    countryName === "bo"
+      ? "Bolivia"
+      : countryName === "mx"
+      ? "México"
+      : countryName === "co"
+      ? "Colombia"
+      : "";
+  useEffect(() => {
+    if (modal) {
+      document.documentElement.style.overflow = "hidden";
+      document.body.scroll = "no"; // IE
+    } else {
+      document.body.scroll = "yes"; // IE
+      document.documentElement.style.overflow = "auto";
+    }
+  }, [modal]);
   return (
     <>
       <div>
@@ -38,17 +63,28 @@ const Home = () => {
           ></meta>
           <meta property="og:image" content="/home.png" />
         </Head>
+
+        <div
+          style={{
+            display: modal ? "block" : "none",
+            position: "absolute",
+            zIndex: 990,
+          }}
+        >
+          <Dopper modalHandle={handleModal} />
+        </div>
         <div className="app">
           <Header countryName={countryName} />
           <Banner countryName={countryName} />
           <Mision />
-          <ComoFunciona countryName={countryName}/>
+          <ComoFunciona countryName={countryName} />
           <Estrategias />
           <Personalidades />
-          <AhorroInversion  countryName={countryName}/>
+          <AhorroInversion countryName={countryName} />
           <Credito countryName={countryName} />
           <Intereses />
           <Servicios countryName={countryName} />
+          <Footer handleModal={handleModal} />
         </div>
       </div>
     </>

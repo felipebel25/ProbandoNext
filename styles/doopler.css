@@ -7,7 +7,7 @@
     height: 100vh;
     padding: 1% 0;
     position:fixed;
-    display: none;
+    display: block;
     z-index: 5;
  
 }
@@ -35,7 +35,7 @@
 
 }
 
-.dopler--button{
+.dopler__button{
     position: relative;
     z-index: 4;
     background-color: #fdf2ff;
@@ -46,7 +46,7 @@
     justify-content: flex-end;
 }
 
-.dopler--button button{
+.dopler__button button{
     background-color: #5532c8;
     color: white;
     border: none;

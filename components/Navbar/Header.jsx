@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
-const Header = ({ countryName = "mx" }) => {
+const Header = ({ countryName}) => {
   const router = useRouter();
   const [y, setY] = useState(0);
   const [activeDown, setActiveDown] = useState(false);
@@ -26,7 +26,6 @@ const Header = ({ countryName = "mx" }) => {
       : router.query.pais === "bo"
       ? "/bo"
       : "/mx";
-
 
   useEffect(() => {
     setY(window.scrollY);
@@ -54,36 +53,25 @@ const Header = ({ countryName = "mx" }) => {
               </Link>
 
               <ul className="nav">
-                <li
-                  onClick={handleToogleHamburguer}
-                  className="scroll-to-section"
-                >
+                <li className="scroll-to-section">
                   <Link href={`${validateRoute}/#top`} scroll={false}>
                     INICIO
                   </Link>
                 </li>
 
-                <li
-                  onClick={handleToogleHamburguer}
-                  className="scroll-to-section"
-                >
+                <li className="scroll-to-section">
                   <Link href={`${validateRoute}/#mision`}>FILOSOFIA</Link>
                 </li>
 
-                <li
-                  onClick={handleToogleHamburguer}
-                  className="scroll-to-section"
-                >
+                <li className="scroll-to-section">
                   <Link href={`${validateRoute}/#comolohacemos`}>
                     COMO FUNCIONA
                   </Link>
                 </li>
-                <li
-                  onClick={handleToogleHamburguer}
-                  className="scroll-to-section"
-                >
+                <li className="scroll-to-section">
                   <Link href={`${validateRoute}/#newsletter`}>BOLETIN</Link>
                 </li>
+
                 <li
                   onClick={handleToogleHamburguer}
                   className="bandera__container"
@@ -93,57 +81,58 @@ const Header = ({ countryName = "mx" }) => {
                       onClick={() => {
                         setActiveDown(!activeDown);
                       }}
+                      style={{display: countryName ? 'flex' : "none"}}
                       src={
                         countryName === "co"
                           ? "/Flag_of_Colombia.svg"
                           : countryName === "bo"
                           ? "/Bandera_de_Bolivia_(Estado) (1).svg"
-                          : "/Flag_of_Mexico.svg"
+                          : countryName === "mx" ? "/Flag_of_Mexico.svg": ""
                       }
                       alt={"flag-bolivia"}
                       className="banderas__default"
                     />
                     <>
-                    {activeDown &&
-                      <div
-                      className="banderas__closeModal"
-                      onClick={() => {
-                        setActiveDown(false);
-                      }}
-                    />
-                    }
-                      {activeDown && 
+                      {activeDown && (
+                        <div
+                          className="banderas__closeModal"
+                          onClick={() => {
+                            setActiveDown(false);
+                          }}
+                        />
+                      )}
+                      {activeDown && (
                         <div className="banderas__container">
-                        {countryName !== "mx" && (
-                          <a href="/mx">
-                            <img
-                              src="/Flag_of_Mexico.svg"
-                              alt={"flag-mexico"}
-                              className="banderas__mex"
-                            />
-                          </a>
-                        )}
-                        {countryName !== "bo" && (
-                          <a href="/bo">
-                            <img
-                              src="/Bandera_de_Bolivia_(Estado) (1).svg"
-                              alt={"flag-bolivia"}
-                              className="banderas__bolivia"
-                            />
-                          </a>
-                        )}
-                        {countryName !== "co" && (
-                          <a href="/co">
-                            <img
-                              src="/Flag_of_Colombia.svg"
-                              alt={"flag-colombia"}
-                              className="banderas__bolivia"
-                            />
-                          </a>
-                        )}
-                      </div>
-                      }
-                    
+                          {countryName !== "mx" && (
+                            <a href="/mx">
+                              <img
+                                src="/Flag_of_Mexico.svg"
+                                alt={"flag-mexico"}
+                                className="banderas__mex"
+                              />
+                            </a>
+                          )}
+                          {countryName !== "bo" && (
+                            <a href="/bo">
+                              <img
+                                src="/Bandera_de_Bolivia_(Estado) (1).svg"
+                                alt={"flag-bolivia"}
+                                className="banderas__bolivia"
+                              />
+                            </a>
+                          )}
+                          {countryName !== "co" && (
+                            <a href="/co">
+                              <img
+                                src="/Flag_of_Colombia.svg"
+                                alt={"flag-colombia"}
+                                className="banderas__bolivia"
+                              />
+                            </a>
+                          )}
+                        </div>
+                      )}
+
                       <div className="banderas__mobile">
                         <div
                           className="banderas__closeModal"
