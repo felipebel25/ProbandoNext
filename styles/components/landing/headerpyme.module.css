@@ -1,0 +1,44 @@
+.headermypyme {
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    height: auto;
+    background-color: transparent;
+    padding:0.2rem 0;
+}
+
+.headermypyme__logo {
+    width: 90%;
+    max-width: 1490px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.headermypyme__logo a img {
+    width: 100%;
+    height: 100%;
+}
+
+.headermypyme__logo a {
+    padding: 0.2rem;
+    width: 9rem;
+}
+.headermypyme__active{
+    z-index: 7;
+    position: absolute;
+    top: 0;
+}
+@media (max-width:736px) {
+    .headermypyme{
+        height: 50px;
+    }
+    .headermypyme__logo {
+        width: 100%;
+        height: 50px;
+        justify-content: center;
+    }
+    .headermypyme__logo a{
+        margin-right: 0;
+    }
+}

@@ -1,3 +1,7 @@
+@font-face {
+  src: url("/fonts/Righteous-Regular.ttf");
+  font-family: "Righteous";
+}
 .section__third {
   display: flex;
   width: 80%;
@@ -10,6 +14,7 @@
   height: auto;
 }
 .landing__01__h4 {
+  font-family: 'Righteous';
   width: 0;
   height: 0;
   font-size: 5rem;
@@ -18,7 +23,6 @@
   color: rgba(141, 141, 141, 0.601);
   bottom: 3rem;
   left: -5%;
-  font-family: "Righteous";
 }
 .landing__01 {
   width: 100%;
@@ -92,6 +96,10 @@
   }
   .landing__button {
     min-width: 18rem;
+  }
+  .landing__opurtunites h2 {
+    font-size: 27px;
+    margin-bottom: 1rem;
   }
 }
 @media (max-width: 736px) {

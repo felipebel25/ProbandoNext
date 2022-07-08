@@ -1,13 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Head from "next/head";
 import FirstSection from "../../components/mipyme/FirstSection";
 import SecondSection from "../../components/mipyme/SecondSection";
 import OneSection from "../../components/mipyme/OneSection";
 import TwoSection from "../../components/mipyme/TwoSection";
 import FourdSection from "../../components/mipyme/FourthSection";
+import HeaderMyPyme from "../../components/Navbar/HeaderPyme";
 const about = () => {
   const [modalCountry, setModalCountry] = useState(false);
-  
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.WOW = require("wowjs");
+    }
+    new WOW.WOW().init();
+  }, []);
+
   return (
     <>
       <div className="aurasocials">
@@ -24,13 +31,14 @@ const about = () => {
           <meta
             property="og:title"
             content="Servicios financieros para la miPYME | AURA Financial"
-          ></meta>
+          />
           <meta
             property="og:description"
             content="Nuestro objetivo es ayudarte a crecer tu negocio con servicios financieros a tu medida"
-          ></meta>
+          />
           <meta property="og:image" content="/landing_screenshot.png" />
         </Head>
+        <HeaderMyPyme />
         <main className="landing">
           <FirstSection
             openModal={setModalCountry}
@@ -81,7 +89,7 @@ const about = () => {
               }
               number={"03"}
               buttonText={"Regístrate"}
-              imageUrl='/03.tips.png'
+              imageUrl="/03.tips.png"
               openModal={setModalCountry}
             />
 
@@ -105,7 +113,6 @@ const about = () => {
               imageUrl="/05.Toma_de_dec.png"
               openModal={setModalCountry}
             />
-
           </main>
           <FourdSection></FourdSection>
         </main>

@@ -3,6 +3,8 @@
   src: url("/fonts/Righteous-Regular.ttf");
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
 .landing__onecontainer {
   background-image: url("/hands__mockup_mobile.png");
   background-position: top right;
@@ -28,6 +30,9 @@
   border-radius: 1rem;
   margin-right: 2rem;
   max-width: 840px;
+}
+.landing__onetext h1{
+  font-family: 'Montserrat';
 }
 .landing__oneflag {
   display: flex;
