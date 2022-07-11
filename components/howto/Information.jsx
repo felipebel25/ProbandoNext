@@ -1,9 +1,9 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Footer from "../Home/Footer";
 
-const Information = ({}) => {
+const Information = ({modalHandle}) => {
   const router = useRouter();
   const validateRoute =
     router.query.pais === "co"
@@ -101,7 +101,7 @@ const Information = ({}) => {
             </div>
           </div>
         )}
-        <Footer />
+        <Footer handleModal={modalHandle} />
       </div>
     </>
   );

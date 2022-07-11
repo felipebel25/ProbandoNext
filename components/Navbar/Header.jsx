@@ -48,15 +48,15 @@ const Header = ({ countryName }) => {
         <div className="row header-nav">
           <div className="col-12">
             <nav className="main-nav">
-              <Link href={"/#top"}>
+              <a href={"/#top"} >
                 <img src="/Aura_logo.png" alt="" className="imagelogo logo" />
-              </Link>
+              </a>
 
               <ul className="nav">
                 <li className="scroll-to-section">
-                  <Link href={`${validateRoute}/#top`} scroll={false}>
+                  <a href={`${validateRoute}/#top`} scroll={false}>
                     INICIO
-                  </Link>
+                  </a>
                 </li>
 
                 <li className="scroll-to-section">

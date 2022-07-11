@@ -20,6 +20,16 @@
       "static/chunks/main.js",
       "static/chunks/pages/404.js"
     ],
+    "/[pais]": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/[pais].js"
+    ],
+    "/[pais]/howto": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/[pais]/howto.js"
+    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
