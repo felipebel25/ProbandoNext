@@ -4,11 +4,12 @@ import React from 'react'
 // import Button from './Button';
 
 import styles from  '../../styles/components/home/servicios.module.css'
+import Button from '../Button'
 
 
 const Servicios = ({countryName , modalCountry}) => {
     const validacionCountry = countryName === 'bo' ? 'Bolivia' : countryName === 'mx' ?  'México' : countryName === 'co' ? 'Colombia' :""
-  
+    Button
     return (
         <div className={styles.servicios}>
             <div className=" wow fadeInDown animated">
@@ -45,11 +46,11 @@ const Servicios = ({countryName , modalCountry}) => {
                         <p>Tarjetas de crédito</p>
                     </div>
                     
-                    {/* {validacionCountry === 'Bolivia' ?
-                            <Button clases={"title__button--si"} contenido='¡Quiero Aura!' click={()=>{modalCountry(true)}}></Button>
+                    {validacionCountry === 'Bolivia' ?
+                            <Button clases={styles.title__button__si} contenido='¡Quiero Aura!' click={()=>{modalCountry(true)}}></Button>
                             :
-                            <Button clases={"title__button--si"} contenido='¡Quiero Aura!' ></Button>
-                        } */}
+                            <Button clases={styles.title__button__si} contenido='¡Quiero Aura!' ></Button>
+                        }
                 </div>
                 <div className={styles.servicios__image}>
                     <img src={countryName === 'bo' ? '/mockupAppAura.png' : '/banksmex.png'} alt='imagen de telefono con bancos app aura' />

@@ -15,15 +15,20 @@
     "static/development/_middlewareManifest.js"
   ],
   "pages": {
-    "/": [
+    "/404": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/index.js"
+      "static/chunks/pages/404.js"
     ],
     "/[pais]": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/[pais].js"
+    ],
+    "/[pais]/howto": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/[pais]/howto.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",
@@ -35,20 +40,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/bo/[idProduct]": [
+    "/bo/registro-BO": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/bo/[idProduct].js"
-    ],
-    "/bo/thankyou-register": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/bo/thankyou-register.js"
-    ],
-    "/confirmation": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/confirmation.js"
+      "static/chunks/pages/bo/registro-BO.js"
     ]
   },
   "ampFirstPages": []

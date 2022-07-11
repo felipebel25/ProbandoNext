@@ -1,8 +1,9 @@
 import React from 'react'
-// import Button from './Button';
 import styles from '../,,/../../styles/components/home/personalidades.module.css'
+import Button from '../Button'
 
 const Personalidades = () => {
+  Button
   return (
     <div id="about" className={`${styles.personalidades} section`}>
     <div className={styles.personalidades__container}>
@@ -15,7 +16,7 @@ const Personalidades = () => {
       <p>Realice la prueba financiera gratuita de Aura para averiguar qué tan saludable se siente desde el punto de
         vista financiero y qué tipo de finanzas tiene.</p>
       <div className={styles.container__button__personalidades}>
-        {/* <Button contenido='Proximamente' /> */}
+        <Button contenido='Proximamente' />
       </div>
     </div>
   </div>

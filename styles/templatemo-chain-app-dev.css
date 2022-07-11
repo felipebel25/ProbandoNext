@@ -306,7 +306,10 @@ body {
   html,
   body {
   }
-
+  .title__button--si {
+    width: 30%;
+   margin-left: 50%;
+}
   .mobile-top-fix {
     margin-top: 30px;
     margin-bottom: 0px;

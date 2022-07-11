@@ -1,10 +1,10 @@
 import React from 'react'
-// import Button from './Button'
 
 import styles from '../../styles/components/home/ahorro.module.css'
+import Button from '../Button'
 const AhorroInversion = ({ countryName, modalCountry }) => {
     const validacionCountry = countryName === 'bo' ? 'Bolivia' : countryName === 'mx' ? 'México' : countryName === 'co' ? 'Colombia' : ""
-
+    
     return (
         <div className={styles.AhorrroInversion}>
             <div className={styles.AhorrroInversion__texto}>
@@ -14,13 +14,11 @@ const AhorroInversion = ({ countryName, modalCountry }) => {
                     largo plazo y al mínimo coste.<br /> <br /> Ponemos tu dinero en modo <em>"turbo"</em>.</p>
                 <div className={styles.AhorroInversion__button}>
 
-                    {/* {validacionCountry === 'Bolivia' ?
+                    {validacionCountry === 'Bolivia' ?
                         <Button clases={'left'} click={(() => {modalCountry(true)})} />
-
-
                         :
                         <Button clases={'left'} click={(() => { console.log('1') })} />
-                    } */}
+                    }
                 </div>
             </div>
             <div className={styles.AhorrroInversion__phone}>

@@ -17,9 +17,13 @@ import dynamic from "next/dynamic";
 const Dopper = dynamic(() => import("../components/Doppler/Doppler"), {
   ssr: false,
 });
+const SelectCountryModal = dynamic(() => import("../components/Home/SelectYourCountry"), {
+  ssr: false,
+});
 const Home = () => {
   const [headerActive, setHeaderActive] = useState(true);
   const [modal, setModal] = useState(false);
+  const [modalCountry, setmodalCountry] = useState(false);
 
   const handleModal = () => {
     setModal(!modal);
@@ -74,17 +78,18 @@ const Home = () => {
           <Dopper modalHandle={handleModal} />
         </div>
         <div className="app">
-          <Header countryName={countryName} />
-          <Banner countryName={countryName} />
+          {modalCountry && <SelectCountryModal modalCountry={setmodalCountry} />}
+          {!modalCountry && <Header countryName={countryName} />} 
+          <Banner countryName={countryName} modalCountry={setmodalCountry} />
           <Mision />
-          <ComoFunciona countryName={countryName} />
+          <ComoFunciona countryName={countryName} modalCountry={setmodalCountry}/>
           <Estrategias />
           <Personalidades />
-          <AhorroInversion countryName={countryName} />
-          <Credito countryName={countryName} />
+          <AhorroInversion countryName={countryName} modalCountry={setmodalCountry} />
+          <Credito countryName={countryName} modalCountry={setmodalCountry} />
           <Intereses />
-          <Servicios countryName={countryName} />
-          <Footer handleModal={handleModal} />
+          <Servicios countryName={countryName}  modalCountry={setmodalCountry}/>
+          <Footer handleModal={handleModal} modalCountry={setmodalCountry}/>
         </div>
       </div>
     </>

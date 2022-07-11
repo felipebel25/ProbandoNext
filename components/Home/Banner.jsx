@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Image from "next/image";
 import styles from '../../styles/components/home/Banner.module.css'
-const Banner = ({ countryName = "bo" }) => {
+const Banner = ({ countryName = "bo", modalCountry }) => {
   const validacionCountry =
     countryName === "bo"
       ? "Bolivia"
@@ -61,9 +61,7 @@ const Banner = ({ countryName = "bo" }) => {
                               ¡ Es Gratis !
                             </span>
                             <button
-                              onClick={() => {
-                                console.log("asd");
-                              }}
+                             onClick={()=>{modalCountry(true)}}
                             >
                               Registrate
                             </button>
