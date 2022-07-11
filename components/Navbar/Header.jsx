@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
-const Header = ({ countryName}) => {
+const Header = ({ countryName }) => {
   const router = useRouter();
   const [y, setY] = useState(0);
   const [activeDown, setActiveDown] = useState(false);
@@ -77,21 +77,24 @@ const Header = ({ countryName}) => {
                   className="bandera__container"
                 >
                   <div className="banderas">
-                    <img
-                      onClick={() => {
-                        setActiveDown(!activeDown);
-                      }}
-                      style={{display: countryName ? 'flex' : "none"}}
-                      src={
-                        countryName === "co"
-                          ? "/Flag_of_Colombia.svg"
-                          : countryName === "bo"
-                          ? "/Bandera_de_Bolivia_(Estado) (1).svg"
-                          : countryName === "mx" ? "/Flag_of_Mexico.svg": ""
-                      }
-                      alt={"flag-bolivia"}
-                      className="banderas__default"
-                    />
+                    {countryName && (
+                      <img
+                        onClick={() => {
+                          setActiveDown(!activeDown);
+                        }}
+                        src={
+                          countryName === "co"
+                            ? "/Flag_of_Colombia.svg"
+                            : countryName === "bo"
+                            ? "/Bandera_de_Bolivia_(Estado) (1).svg"
+                            : countryName === "mx"
+                            ? "/Flag_of_Mexico.svg"
+                            : ""
+                        }
+                        alt={"flag-bolivia"}
+                        className="banderas__default"
+                      />
+                    )}
                     <>
                       {activeDown && (
                         <div

@@ -6,6 +6,7 @@ import OneSection from "../../components/mipyme/OneSection";
 import TwoSection from "../../components/mipyme/TwoSection";
 import FourdSection from "../../components/mipyme/FourthSection";
 import HeaderMyPyme from "../../components/Navbar/HeaderPyme";
+import FooterLanding from "../../components/mipyme/FooterLanding";
 const about = () => {
   const [modalCountry, setModalCountry] = useState(false);
   useEffect(() => {
@@ -120,6 +121,7 @@ const about = () => {
             />
           </main>
           <FourdSection />
+          <FooterLanding />
         </main>
       </div>
     </>

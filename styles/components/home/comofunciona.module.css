@@ -217,7 +217,7 @@ comoFunciona
 
 @media (max-width: 767px) {
     .comoFunciona__buttons a {
-        margin-right: 1.5rem;
+        margin-right: 0;
         width: 100%;
     }
 

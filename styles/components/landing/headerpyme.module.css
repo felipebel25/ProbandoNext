@@ -35,7 +35,7 @@
     }
     .headermypyme__logo {
         width: 100%;
-        height: 50px;
+        height: auto;
         justify-content: center;
     }
     .headermypyme__logo a{
