@@ -25,7 +25,7 @@ const AuthCountry = () => {
 
       <meta
         name="description"
-        content="La app que te acompaña a lo largo de tu vida financiera. Te facilitamos el entendimiento de la finanzas, ayudamos a armar tu expediente y te contactamos con las financieras que cubran tus necesidades especificas. A fin de que tu negocio y tu vida crezcan."
+        content="La app que te acompaña a lo largo de tu vida financiera. Te facilitamos el entendimiento de las finanzas, ayudamos a armar tu expediente y te contactamos con las financieras que cubran tus necesidades especificas. A fin de que tu negocio y tu vida crezcan."
       />
       <meta property="og:title" content="Aura Financial"></meta>
       <meta
