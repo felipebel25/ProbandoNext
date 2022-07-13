@@ -16,11 +16,8 @@ const Credito = ({ countryName, modalCountry }) => {
                     <h2>Haz realidad tus sueños</h2>
                     <p>El acceso a crédito y otros servicios financieros debería ser universal e inclusivo, independiente de si cuentas con historial financiero. Ya sea que quieras iniciar un negocio, crecerlo, financiar la educación de tus hijos, atender tu salud y más. Todo esto de acuerdo a tu perfil y a tasas justas.</p>
                     <div className={styles.credito__button}>
-                        {validacionCountry === 'Bolivia' ?
                             <Button clases={'left'} click={modalCountry} />
-                            :
-                            <Button clases={'left'} />
-                        }
+                        
                         <p>- ¡ Es Gratis !</p>
                     </div>
                 </div>

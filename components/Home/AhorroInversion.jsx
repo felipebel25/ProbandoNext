@@ -14,11 +14,8 @@ const AhorroInversion = ({ countryName, modalCountry }) => {
                     largo plazo y al mínimo coste.<br /> <br /> Ponemos tu dinero en modo <em>"turbo"</em>.</p>
                 <div className={styles.AhorroInversion__button}>
 
-                    {validacionCountry === 'Bolivia' ?
                         <Button clases={'left'} click={(() => {modalCountry(true)})} />
-                        :
-                        <Button clases={'left'} click={(() => { console.log('1') })} />
-                    }
+                    
                 </div>
             </div>
             <div className={styles.AhorrroInversion__phone}>

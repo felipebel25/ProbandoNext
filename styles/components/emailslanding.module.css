@@ -82,14 +82,16 @@
 
 .email__socials__imgs img {
     width: 5rem;
-    margin-right: 1rem;
     padding: 0.5rem;
-    background-color: #5532c8;
+    background-color: transparent;
     cursor: pointer;
     border-radius: 1rem;
     height: 100%;
 }
-
+.email__img__text{
+    color: #5532c8;
+    text-align: center;
+}
 .email__socials__imgs img:hover {
     opacity: 0.5;
 }

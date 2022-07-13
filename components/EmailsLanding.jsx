@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
 
-
-
 import styles from "../styles/components/emailslanding.module.css";
 import Header from "./Navbar/Header";
 import { useRouter } from "next/router";
@@ -22,19 +20,28 @@ const EmailsLanding = ({
   //         category: "redes sociales"
   //     })
   // }
+  const countryName = router.pathname;
+  const validationCountry = countryName.includes("bo")
+    ? "/bo"
+    : countryName.includes("mx")
+    ? "/mx"
+    : countryName("co")
+    ? "/co"
+    : "";
+
   useEffect(() => {
     {
       timeReturnHome &&
         setTimeout(() => {
-            router.replace("/");
+          router.replace(validationCountry);
         }, timeReturnHome);
     }
   }, []);
   return (
     <>
-    <Head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-    </Head>
+      <Head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+      </Head>
       <Header />
       <div className={styles.emailverification}>
         <main className={styles.emailverification__container}>
@@ -43,7 +50,7 @@ const EmailsLanding = ({
             <p className={styles.emailverification__p}>{text}</p>
             <button
               onClick={() => {
-                router.replace("/");
+                router.replace(validationCountry);
               }}
               className={styles.email__container__button}
             >
@@ -55,23 +62,26 @@ const EmailsLanding = ({
                 <div className={styles.email__socials__imgs}>
                   <a
                     onClick={() => {
-                    //   socialAnalytics("Instagram");
+                      //   socialAnalytics("Instagram");
                     }}
                     href="https://www.instagram.com/aura.financial/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img src='/social media.svg' alt="icono instagran" />
+                    <img src="/instagram__purple.svg" alt="icono instagran" />
+                    <p className={styles.email__img__text}>Instagram</p>
                   </a>
                   <a
                     onClick={() => {
-                    //   socialAnalytics("Facebook");
+                      //   socialAnalytics("Facebook");
                     }}
                     href="https://www.facebook.com/aura.Bolivia01"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img src="/facebook.svg" alt="icono facebook" />
+                    <img src="/facebook__purple.svg" alt="icono facebook" />
+                    <p className={styles.email__img__text}>Facebook</p>
+
                   </a>
                 </div>
               </div>
@@ -81,11 +91,11 @@ const EmailsLanding = ({
           </div>
           {!notFound ? (
             <div className={styles.emailverification__container__img}>
-              <img src='/plane-email.png' alt="imagen de papel" />
+              <img src="/plane-email.png" alt="imagen de papel" />
             </div>
           ) : (
             <div className={styles.emailverification__container__404}>
-              <img src='/404bg.png' alt="404 image" />
+              <img src="/404bg.png" alt="404 image" />
             </div>
           )}
         </main>

@@ -17,13 +17,21 @@ import dynamic from "next/dynamic";
 const Dopper = dynamic(() => import("../components/Doppler/Doppler"), {
   ssr: false,
 });
-const SelectCountryModal = dynamic(() => import("../components/Home/SelectYourCountry"), {
+const SelectCountryModal = dynamic(
+  () => import("../components/Home/SelectYourCountry"),
+  {
+    ssr: false,
+  }
+);
+
+const ModalComing = dynamic(() => import("../components/Home/ModalComing"), {
   ssr: false,
 });
 const Home = () => {
   const [headerActive, setHeaderActive] = useState(true);
   const [modal, setModal] = useState(false);
   const [modalCountry, setmodalCountry] = useState(false);
+  const [modalComing, setModalComing] = useState(false);
 
   const handleModal = () => {
     setModal(!modal);
@@ -39,14 +47,16 @@ const Home = () => {
       ? "Colombia"
       : "";
   useEffect(() => {
-    if (modal) {
+    if (modal || modalComing) {
       document.documentElement.style.overflow = "hidden";
       document.body.scroll = "no"; // IE
     } else {
       document.body.scroll = "yes"; // IE
       document.documentElement.style.overflow = "auto";
     }
-  }, [modal]);
+  }, [modal, modalComing]);
+  // proximamente abriremos registro en tu pais
+
   return (
     <>
       <div>
@@ -58,12 +68,12 @@ const Home = () => {
           />
           <meta
             name="description"
-            content="La app que te acompaña a lo largo de tu vida financiera. Te facilitamos el entendimiento de la finanzas, ayudamos a armar tu expediente y te contactamos con las financieras que cubran tus necesidades especificas. A fin de que tu negocio y tu vida crezcan."
+            content="La app que te acompaña a lo largo de tu vida financiera. Te facilitamos el entendimiento de las finanzas, ayudamos a armar tu expediente y te contactamos con las financieras que cubran tus necesidades especificas. A fin de que tu negocio y tu vida crezcan."
           />
           <meta property="og:title" content="Aura Financial"></meta>
           <meta
             property="og:description"
-            content="La app que te acompaña a lo largo de tu vida financiera. Te facilitamos el entendimiento de la finanzas, ayudamos a armar tu expediente y te contactamos con las financieras que cubran tus necesidades especificas. A fin de que tu negocio y tu vida crezcan."
+            content="La app que te acompaña a lo largo de tu vida financiera. Te facilitamos el entendimiento de las finanzas, ayudamos a armar tu expediente y te contactamos con las financieras que cubran tus necesidades especificas. A fin de que tu negocio y tu vida crezcan."
           ></meta>
           <meta property="og:image" content="/home.png" />
         </Head>
@@ -78,18 +88,27 @@ const Home = () => {
           <Dopper modalHandle={handleModal} />
         </div>
         <div className="app">
-          {modalCountry && <SelectCountryModal modalCountry={setmodalCountry} />}
-          {!modalCountry && <Header countryName={countryName} />} 
-          <Banner countryName={countryName} modalCountry={setmodalCountry} />
+          {modalCountry && (
+            <SelectCountryModal modalCountry={setmodalCountry} />
+          )}
+          {!modalCountry && <Header countryName={countryName} />}
+          {modalComing && <ModalComing closemodal={setModalComing} />}
+          <Banner countryName={countryName} modalCountry={validacionCountry !== 'Bolivia' ? setModalComing : setmodalCountry } />
           <Mision />
-          <ComoFunciona countryName={countryName} modalCountry={setmodalCountry}/>
+          <ComoFunciona
+            countryName={countryName}
+            modalCountry={validacionCountry !== 'Bolivia' ? setModalComing : setmodalCountry }
+          />
           <Estrategias />
           <Personalidades />
-          <AhorroInversion countryName={countryName} modalCountry={setmodalCountry} />
-          <Credito countryName={countryName} modalCountry={setmodalCountry} />
+          <AhorroInversion
+            countryName={countryName}
+            modalCountry={validacionCountry !== 'Bolivia' ? setModalComing : setmodalCountry }
+          />
+          <Credito countryName={countryName} modalCountry={validacionCountry !== 'Bolivia' ? setModalComing : setmodalCountry } />
           <Intereses />
-          <Servicios countryName={countryName}  modalCountry={setmodalCountry}/>
-          <Footer handleModal={handleModal} modalCountry={setmodalCountry}/>
+          <Servicios countryName={countryName} modalCountry={validacionCountry !== 'Bolivia' ? setModalComing : setmodalCountry } />
+          <Footer handleModal={handleModal} />
         </div>
       </div>
     </>

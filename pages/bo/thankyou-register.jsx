@@ -15,8 +15,7 @@ const ThankYouRegister = () => {
       </Head>
       <EmailsLanding
         title='¡Gracias por registrarte!'
-        text={`Estamos trabajando para buscar las mejores opciones. Muy pronto nos pondremos en contacto.`}
-        
+        text={`Estamos trabajando para buscar las mejores opciones. Muy pronto te contactaremos en contacto.`}
         socialMedias={true}
       />
     </>

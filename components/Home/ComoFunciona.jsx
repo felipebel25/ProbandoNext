@@ -76,7 +76,6 @@ const ComoFunciona = ({ countryName = "bo", modalCountry }) => {
             <p>Toma decisiones relevantes para tu futuro.</p>
           </div>
           <div className={styles.comoFunciona__buttons}>
-            {validacionCountry === "bo" ? (
               <button
                 onClick={() => {
                   modalCountry(true);
@@ -85,11 +84,7 @@ const ComoFunciona = ({ countryName = "bo", modalCountry }) => {
               >
                 Registrate
               </button>
-            ) : (
-              <button className={styles.clients__button__list}>
-                Registrate
-              </button>
-            )}
+         
 
             <a href={`/${validacionCountry}/howto`}>
               <button className={styles.clients__button__list}>

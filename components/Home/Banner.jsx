@@ -55,25 +55,17 @@ const Banner = ({ countryName = "bo", modalCountry }) => {
                       </div>
 
                       <div id="button--intro1">
-                        {validacionCountry === "Bolivia" ? (
                           <div className={styles.banner__button}>
                             <span className={styles.banner__buttonfree}>
                               ¡ Es Gratis !
                             </span>
                             <button
-                             onClick={()=>{modalCountry(true)}}
+                             onClick={()=>{modalCountry(s => !s)}}
                             >
                               Registrate
                             </button>
                           </div>
-                        ) : (
-                          <div className={styles.banner__button}>
-                            <span className={styles.banner__buttonfree}>
-                              ¡ Es Gratis !{" "}
-                            </span>
-                            <button>Registrate</button>
-                          </div>
-                        )}
+                      
                       </div>
                     </div>
                   </div>

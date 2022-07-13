@@ -63,6 +63,7 @@
 }
 .selectcountry__flags img{
     border-radius: 0.5rem;
+    cursor: pointer;
 }
 .selectcountry__flags img:hover{
     opacity: 0.5;

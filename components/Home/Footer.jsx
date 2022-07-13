@@ -97,13 +97,13 @@ const Footer = ({ handleModal, countryName }) => {
                     onClick={() => { socialAnalytics('Facebook') }}
                     href="https://www.facebook.com/aura.Bolivia01" target='_blank'
                   >
-                    <button><img src='/facebook.svg' /></button>
+                    <button><img src='/facebook__white.svg' /></button>
                   </a>
                   <a
                     onClick={() => { socialAnalytics('Instagram') }}
                     href="https://www.instagram.com/aura.financial/" target='_blank'
                   >
-                    <button><img src='/social media.svg' /></button>
+                    <button><img src='/instagram__white.svg' /></button>
                   </a>
                 </div>
               </div>

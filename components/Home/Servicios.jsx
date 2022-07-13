@@ -46,11 +46,8 @@ const Servicios = ({countryName , modalCountry}) => {
                         <p>Tarjetas de crédito</p>
                     </div>
                     
-                    {validacionCountry === 'Bolivia' ?
                             <Button clases={styles.title__button__si} contenido='¡Quiero Aura!' click={()=>{modalCountry(true)}}></Button>
-                            :
-                            <Button clases={styles.title__button__si} contenido='¡Quiero Aura!' ></Button>
-                        }
+                        
                 </div>
                 <div className={styles.servicios__image}>
                     <img src={countryName === 'bo' ? '/mockupAppAura.png' : '/banksmex.png'} alt='imagen de telefono con bancos app aura' />
