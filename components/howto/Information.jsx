@@ -21,7 +21,7 @@ const Information = ({modalHandle}) => {
   return (
     <>
       <Head>
-        <title>Como lo Hacemos | Aura Financial {validateCountry} </title>
+        <title>Como lo Hacemos | Aura Financial {validateCountry}</title>
       </Head>
       <div className="finance information">
         <div className="container--titulos">

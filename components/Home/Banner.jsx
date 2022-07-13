@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Image from "next/image";
-import styles from '../../styles/components/home/Banner.module.css'
+import styles from "../../styles/components/home/Banner.module.css";
 const Banner = ({ countryName = "bo", modalCountry }) => {
   const validacionCountry =
     countryName === "bo"
@@ -20,7 +20,6 @@ const Banner = ({ countryName = "bo", modalCountry }) => {
 
   return (
     <>
-      
       <div
         className={` wow fadeIn ${styles.banner}`}
         id="top"
@@ -47,25 +46,29 @@ const Banner = ({ countryName = "bo", modalCountry }) => {
                           <br />
                           en un solo paso.
                         </h1>
+                        <br />
                         <p>
+                          Porque sabemos que en compañía todo es mejor,<strong> AURA App </strong>
+                          estará a tu lado durante toda tu vida financiera. <br />
+                          <br />
                           Ahorra, invierte e incluso solicita un crédito sin
-                          esfuerzo y de forma automática. Asesoramiento
-                          financiero personal siempre que lo necesites.
+                          esfuerzo y de forma automática.
                         </p>
                       </div>
 
                       <div id="button--intro1">
-                          <div className={styles.banner__button}>
-                            <span className={styles.banner__buttonfree}>
-                              ¡ Es Gratis !
-                            </span>
-                            <button
-                             onClick={()=>{modalCountry(s => !s)}}
-                            >
-                              Registrate
-                            </button>
-                          </div>
-                      
+                        <div className={styles.banner__button}>
+                          <span className={styles.banner__buttonfree}>
+                            ¡ Es Gratis !   
+                          </span>
+                          <button
+                            onClick={() => {
+                              modalCountry((s) => !s);
+                            }}
+                          >
+                            Registrate
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -77,11 +80,11 @@ const Banner = ({ countryName = "bo", modalCountry }) => {
                     data-wow-delay="0.5s"
                   >
                     <Image
-                    className={styles.rightimage}
+                      className={styles.rightimage}
                       width="710px"
-                      height='620px'
-                      layout='raw'
-                      src='/group_18.png'
+                      height="620px"
+                      layout="raw"
+                      src="/group_18.png"
                       priority
                     />
                   </div>
@@ -96,3 +99,4 @@ const Banner = ({ countryName = "bo", modalCountry }) => {
 };
 
 export default Banner;
+/*darle espacio al gratis!  - */ 

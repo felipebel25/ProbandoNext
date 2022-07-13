@@ -9,7 +9,7 @@ const Header = ({ countryName }) => {
   const handleToogleHamburguer = () => {
     if (
       typeof window !== "undefined" &&
-      (window.screen.width && window.innerWidth) >= 992
+      (window.screen.width && window.innerWidth) >= 767
     ) {
       setactiveDownDesk(!activeDownDesk);
     } else {
@@ -112,7 +112,7 @@ const Header = ({ countryName }) => {
                               if (
                                 typeof window !== "undefined" &&
                                 (window.screen.width && window.innerWidth) >=
-                                  992
+                                  767
                               ) {
                                 setactiveDownDesk(false);
                               } else {

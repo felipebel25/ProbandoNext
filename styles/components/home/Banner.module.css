@@ -30,6 +30,7 @@
 .banner .leftcontent {
   margin-right: 15px;
   max-width: 520px;
+  margin-top: 4rem;
 }
 
 .banner .leftcontent h2 {
@@ -91,7 +92,8 @@
   margin-right: 0.4rem;
 }
 .banner__buttonfree::after {
-  content: " -";
+  content: " - ";
+  margin: 0 0.4rem;
 }
 .container__inicio {
   width: 100%;
@@ -120,7 +122,8 @@
 
 @media (max-width: 992px) {
   .title__primary {
-    color: black;
+    color: #5532c8;
+
   }
   .banner__buttonfree {
     width: 100%;
@@ -197,7 +200,7 @@
 
 @media (max-width: 767px) {
   .title__primary {
-    color: #000;
+    color: #5532c8;
     line-height: 1.2;
     font-weight: 700;
     font-size: 32px;
@@ -205,8 +208,9 @@
   .banner {
     padding-top: 5rem;
     height: 100%;
-
     text-align: center;
+    background-color: #fff8e4;
+    padding-bottom: 0;
   }
 
   .banner .leftcontent p {

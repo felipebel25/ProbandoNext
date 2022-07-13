@@ -28,7 +28,7 @@ const about = () => {
           />
           <meta
             name="description"
-            content="Nuestro objetivo es ayudarte a crecer tu negocio con servicios financieros a tu medida"
+            content="Nuestro objetivo es ayudar a crecer tu negocio con servicios financieros a tu medida."
           />
           <meta
             property="og:title"
@@ -36,8 +36,9 @@ const about = () => {
           />
           <meta
             property="og:description"
-            content="Nuestro objetivo es ayudarte a crecer tu negocio con servicios financieros a tu medida"
+            content="Nuestro objetivo es ayudar a crecer tu negocio con servicios financieros a tu medida."
           />
+          
           <meta property="og:image" content="/landing_screenshot.png" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />

@@ -9,22 +9,25 @@ const RegisterQR = () => {
       <Head>
         <title>Register | AURA Finance</title>
       </Head>
-      <p>loading</p>
-
-      <div className="holds-the-iframe">
+      <div className="lds-ring"><div></div><div></div><div></div><div></div></div>
         <iframe
           title="goRegister"
           id="typeform-full"
           width="100%"
           height="100%"
+          loading="lazy"
           frameBorder="0"
           src="https://go.moyoai.com/Au22BKe5"
           allow="geolocation; camera"
         />
-      </div>
       <RotateScreen />
     </>
   );
 };
 
 export default RegisterQR;
+/* banderas como en desktop tablet*/ 
+/* animaciones colores */
+/* titulo en lila mobile */
+/* amarillo tambien en mobile */
+/* router */
