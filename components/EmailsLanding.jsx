@@ -25,9 +25,9 @@ const EmailsLanding = ({
     ? "/bo"
     : countryName.includes("mx")
     ? "/mx"
-    : countryName("co")
+    : countryName.includes("co")
     ? "/co"
-    : "";
+    : '/';
 
   useEffect(() => {
     {

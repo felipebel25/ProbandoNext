@@ -2,6 +2,9 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/bo/registro-BO": "pages/bo/registro-BO.js",
+  "/thankyou": "pages/thankyou.js",
+  "/": "pages/index.js",
+  "/[pais]": "pages/[pais].js",
+  "/bo/thankyou-register": "pages/bo/thankyou-register.js",
   "/404": "pages/404.js"
 }
