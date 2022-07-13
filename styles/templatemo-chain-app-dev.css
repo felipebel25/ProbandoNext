@@ -2595,11 +2595,14 @@ a.btn_red {
   margin-bottom: 2rem;
 }
 .lds-ring {
-  display: inline-block;
   position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
   width: 100px;
   height: 100px;
-  left: 45%;
   top: 45%;
 }
 .lds-ring div {
@@ -3083,6 +3086,9 @@ a{
 }
 
 @media (max-width: 767px) {
+  .left{
+    justify-content: center;
+  }
   .banderas__container{
     display: none;
   }
