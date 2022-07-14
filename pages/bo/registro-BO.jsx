@@ -17,7 +17,6 @@ const RegisterQR = () => {
           id="typeform-full"
           width="100%"
           height="100%"
-          loading="lazy"
           frameBorder="0"
           src="https://go.moyoai.com/Au22BKe5"
           allow="geolocation; camera"
