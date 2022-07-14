@@ -77,15 +77,12 @@ const Home = () => {
           <meta property="og:image" content="/home.png" />
 
           <meta content="summary" name="twitter:card" />
-          <meta
-            name="twitter:title"
-            content="Aura Financial"
-          />
+          <meta name="twitter:title" content="Aura Financial" />
           {/* <meta content="@sonar_fm" name="twitter:site" />
           <meta content="@sonar_fm" name="twitter:creator" /> */}
           <meta
             name="twitter:image"
-            content="/home.png" 
+            content="https://farm6.staticflickr.com/5510/14338202952_93595258ff_z.jpg"
           />
           <meta
             name="twitter:description"
