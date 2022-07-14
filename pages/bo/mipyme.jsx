@@ -52,7 +52,7 @@ const about = () => {
           <meta content="@sonar_fm" name="twitter:creator" /> */}
           <meta
             name="twitter:image"
-            content="https://i.ibb.co/wCxZx64/landing-screenshot.png" 
+            content="https://live.staticflickr.com/65535/52216505585_87cc2237c6_b.jpg" 
           />
           <meta
             name="twitter:description"

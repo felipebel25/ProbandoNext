@@ -82,7 +82,7 @@ const Home = () => {
           <meta content="@sonar_fm" name="twitter:creator" /> */}
           <meta
             name="twitter:image"
-            content="https://farm6.staticflickr.com/5510/14338202952_93595258ff_z.jpg"
+            content="https://live.staticflickr.com/65535/52216504850_e7272f6408_h.jpg"
           />
           <meta
             name="twitter:description"

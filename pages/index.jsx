@@ -33,6 +33,18 @@ const AuthCountry = () => {
       ></meta>
       <meta name="keywords" content="asesoria, educacion, salud, financiera, expediente, ahorro, inversion, credito, score, crediticio, credit, scoring, psicometrico, inclusion, financiera, Fintech, Mexico, Colombia, Bolivia, Latam, micro, pequeña, mediana, empresa, pyme, mipyme, banco, emprendedor, solucion, crowdfunding, proyecto, innovacion, disruptivo, IA, machine, learning" />
       <meta property="og:image" content="/home.png" />
+      <meta content="summary" name="twitter:card" />
+          <meta name="twitter:title" content="Aura Financial" />
+          {/* <meta content="@sonar_fm" name="twitter:site" />
+          <meta content="@sonar_fm" name="twitter:creator" /> */}
+          <meta
+            name="twitter:image"
+            content="https://live.staticflickr.com/65535/52216504850_e7272f6408_h.jpg"
+          />
+          <meta
+            name="twitter:description"
+            content="La app que te acompaña a lo largo de tu vida financiera. Facilitamos el entendimiento de las finanzas, ayudamos a construir tu expediente y te ponemos en contacto con las financieras que cubran tus necesidades especificas. A fin de que tu negocio y tu vida crezcan."
+          />
     </Head>
   );
 };
