@@ -42,6 +42,23 @@ const about = () => {
           />
           
           <meta property="og:image" content="/landing_screenshot.png" />
+          
+          <meta content="summary" name="twitter:card" />
+          <meta
+            name="twitter:title"
+            content="Servicios financieros para la miPYME | AURA Financial"
+          />
+          {/* <meta content="@sonar_fm" name="twitter:site" />
+          <meta content="@sonar_fm" name="twitter:creator" /> */}
+          <meta
+            name="twitter:image"
+            content="/landing_screenshot.png" 
+          />
+          <meta
+            name="twitter:description"
+            content="Nuestro objetivo es ayudar a crecer tu negocio con servicios financieros a tu medida."
+          />
+          
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
           <link

@@ -75,6 +75,22 @@ const Home = () => {
             content="La app que te acompaña a lo largo de tu vida financiera. Facilitamos el entendimiento de las finanzas, ayudamos a construir tu expediente y te ponemos en contacto con las financieras que cubran tus necesidades especificas. A fin de que tu negocio y tu vida crezcan."
           ></meta>
           <meta property="og:image" content="/home.png" />
+
+          <meta content="summary" name="twitter:card" />
+          <meta
+            name="twitter:title"
+            content="Aura Financial"
+          />
+          {/* <meta content="@sonar_fm" name="twitter:site" />
+          <meta content="@sonar_fm" name="twitter:creator" /> */}
+          <meta
+            name="twitter:image"
+            content="/home.png" 
+          />
+          <meta
+            name="twitter:description"
+            content="La app que te acompaña a lo largo de tu vida financiera. Facilitamos el entendimiento de las finanzas, ayudamos a construir tu expediente y te ponemos en contacto con las financieras que cubran tus necesidades especificas. A fin de que tu negocio y tu vida crezcan."
+          />
         </Head>
 
         <div
@@ -92,21 +108,40 @@ const Home = () => {
           )}
           {!modalCountry && <Header countryName={countryName} />}
           {modalComing && <ModalComing closemodal={setModalComing} />}
-          <Banner countryName={countryName} modalCountry={validacionCountry !== 'Bolivia' ? setModalComing : setmodalCountry } />
+          <Banner
+            countryName={countryName}
+            modalCountry={
+              validacionCountry !== "Bolivia" ? setModalComing : setmodalCountry
+            }
+          />
           <Mision />
           <ComoFunciona
             countryName={countryName}
-            modalCountry={validacionCountry !== 'Bolivia' ? setModalComing : setmodalCountry }
+            modalCountry={
+              validacionCountry !== "Bolivia" ? setModalComing : setmodalCountry
+            }
           />
           <Estrategias />
           <Personalidades />
           <AhorroInversion
             countryName={countryName}
-            modalCountry={validacionCountry !== 'Bolivia' ? setModalComing : setmodalCountry }
+            modalCountry={
+              validacionCountry !== "Bolivia" ? setModalComing : setmodalCountry
+            }
           />
-          <Credito countryName={countryName} modalCountry={validacionCountry !== 'Bolivia' ? setModalComing : setmodalCountry } />
+          <Credito
+            countryName={countryName}
+            modalCountry={
+              validacionCountry !== "Bolivia" ? setModalComing : setmodalCountry
+            }
+          />
           <Intereses />
-          <Servicios countryName={countryName} modalCountry={validacionCountry !== 'Bolivia' ? setModalComing : setmodalCountry } />
+          <Servicios
+            countryName={countryName}
+            modalCountry={
+              validacionCountry !== "Bolivia" ? setModalComing : setmodalCountry
+            }
+          />
           <Footer handleModal={handleModal} />
         </div>
       </div>
