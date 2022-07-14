@@ -1,9 +1,11 @@
 import React from "react";
 import Head from "next/head";
 import RotateScreen from "../../components/RotateScreen";
+import { usePageAnalyitics } from "../../helpers/hooks/usePageAnalytics";
 // import { usePageAnalyitics } from '../helpers/hooks/usePageAnalytics'
 const RegisterQR = () => {
   //   usePageAnalyitics()
+  usePageAnalyitics()
   return (
     <>
       <Head>

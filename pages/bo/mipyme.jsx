@@ -7,7 +7,9 @@ import TwoSection from "../../components/mipyme/TwoSection";
 import FourdSection from "../../components/mipyme/FourthSection";
 import HeaderMyPyme from "../../components/Navbar/HeaderPyme";
 import FooterLanding from "../../components/mipyme/FooterLanding";
+import { usePageAnalyitics } from "../../helpers/hooks/usePageAnalytics";
 const about = () => {
+  usePageAnalyitics()
   const [modalCountry, setModalCountry] = useState(false);
   useEffect(() => {
     if (typeof window !== "undefined") {

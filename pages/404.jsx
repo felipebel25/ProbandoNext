@@ -1,27 +1,24 @@
-import React from 'react'
-import Head from 'next/head'
-import EmailsLanding from '../components/EmailsLanding'
-// import { usePageAnalyitics } from '../helpers/hooks/usePageAnalytics';
+import React from "react";
+import Head from "next/head";
+import EmailsLanding from "../components/EmailsLanding";
+import { usePageAnalyitics } from "../helpers/hooks/usePageAnalytics";
 
 const NotFound = () => {
-    
-//   usePageAnalyitics()
+  usePageAnalyitics();
   return (
     <>
-     <Head>
+      <Head>
         <meta charSet="utf-8" />
-        <title> 404  | AURA Financial</title>
+        <title> 404 | AURA Financial</title>
       </Head>
-      <EmailsLanding 
-        title='404'
-        text='Upsss... no pudimos encontrar la pagina'
+      <EmailsLanding
+        title="404"
+        text="Upsss... no pudimos encontrar la pagina"
         notFound={true}
         timeReturnHome={10000}
-    />
-    
+      />
     </>
-  
-  )
-}
+  );
+};
 
-export default NotFound
+export default NotFound;

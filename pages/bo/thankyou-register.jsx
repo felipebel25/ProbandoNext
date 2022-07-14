@@ -1,12 +1,10 @@
-import Head from 'next/head'
-import React from 'react'
-import EmailsLanding from '../../components/EmailsLanding'
-// import { usePageAnalyitics } from '../helpers/hooks/usePageAnalytics';
+import Head from "next/head";
+import React from "react";
+import EmailsLanding from "../../components/EmailsLanding";
+import { usePageAnalyitics } from "../../helpers/hooks/usePageAnalytics";
 
 const ThankYouRegister = () => {
-
-//   usePageAnalyitics()
-  
+  usePageAnalyitics();
   return (
     <>
       <Head>
@@ -14,13 +12,12 @@ const ThankYouRegister = () => {
         <title>Thank You-Register | AURA Financial</title>
       </Head>
       <EmailsLanding
-        title='¡Gracias por registrarte!'
+        title="¡Gracias por registrarte!"
         text={`Estamos trabajando para buscar las mejores opciones. Muy pronto te contactaremos en contacto.`}
         socialMedias={true}
       />
     </>
+  );
+};
 
-  )
-}
-
-export default ThankYouRegister
+export default ThankYouRegister;

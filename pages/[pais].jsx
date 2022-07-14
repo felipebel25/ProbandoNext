@@ -32,7 +32,6 @@ const Home = () => {
   const [modal, setModal] = useState(false);
   const [modalCountry, setmodalCountry] = useState(false);
   const [modalComing, setModalComing] = useState(false);
-
   const handleModal = () => {
     setModal(!modal);
   };

@@ -1,11 +1,12 @@
 import Head from 'next/head';
 import React from 'react'
 import EmailsLanding from '../components/EmailsLanding';
+import { usePageAnalyitics } from '../helpers/hooks/usePageAnalytics';
 // import { usePageAnalyitics } from '../helpers/hooks/usePageAnalytics';
 
 const ThankYou = () => {
 //   usePageAnalyitics()
-  
+  usePageAnalyitics()
   return (
     <>
       <Head>

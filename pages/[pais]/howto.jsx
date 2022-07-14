@@ -5,12 +5,14 @@ import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import Information from "../../components/howto/Information";
 import Header from "../../components/Navbar/Header";
+import { usePageAnalyitics } from "../../helpers/hooks/usePageAnalytics";
 const Dopper = dynamic(() => import("../../components/Doppler/Doppler"), {
   ssr: false,
 });
 const Appholistica = () => {
   const [country, setCountry] = useState("");
   const [modal, setModal] = useState(false);
+  usePageAnalyitics()
   const handleModal = () => {
     setModal(!modal);
   };

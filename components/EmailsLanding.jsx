@@ -4,6 +4,7 @@ import styles from "../styles/components/emailslanding.module.css";
 import Header from "./Navbar/Header";
 import { useRouter } from "next/router";
 import Head from "next/head";
+import { eventAnalytics } from "../helpers/hooks/usePageAnalytics";
 
 const EmailsLanding = ({
   title,
@@ -13,13 +14,13 @@ const EmailsLanding = ({
   timeReturnHome,
 }) => {
   let router = useRouter();
-  // const socialAnalytics = (socialMedia) => {
-  //     eventAnalytics({
-  //         name:socialMedia,
-  //         action: `${socialMedia} button`,
-  //         category: "redes sociales"
-  //     })
-  // }
+  const socialAnalytics = (socialMedia) => {
+    eventAnalytics({
+      name: socialMedia,
+      action: `${socialMedia} button`,
+      category: "redes sociales",
+    });
+  };
   const countryName = router.pathname;
   const validationCountry = countryName.includes("bo")
     ? "/bo"
@@ -27,7 +28,7 @@ const EmailsLanding = ({
     ? "/mx"
     : countryName.includes("co")
     ? "/co"
-    : '/';
+    : "/";
 
   useEffect(() => {
     {
@@ -62,7 +63,7 @@ const EmailsLanding = ({
                 <div className={styles.email__socials__imgs}>
                   <a
                     onClick={() => {
-                      //   socialAnalytics("Instagram");
+                      socialAnalytics("Instagram");
                     }}
                     href="https://www.instagram.com/aura.financial/"
                     target="_blank"
@@ -73,7 +74,7 @@ const EmailsLanding = ({
                   </a>
                   <a
                     onClick={() => {
-                      //   socialAnalytics("Facebook");
+                      socialAnalytics("Facebook");
                     }}
                     href="https://www.facebook.com/aura.Bolivia01"
                     target="_blank"
@@ -81,7 +82,6 @@ const EmailsLanding = ({
                   >
                     <img src="/facebook__purple.svg" alt="icono facebook" />
                     <p className={styles.email__img__text}>Facebook</p>
-
                   </a>
                 </div>
               </div>

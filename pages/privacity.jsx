@@ -3,8 +3,10 @@ import HeaderMyPyme from "../components/Navbar/HeaderPyme";
 import FooterLanding from "../components/mipyme/FooterLanding";
 import styles from "../styles/components/privacity.module.css";
 import Head from "next/head";
+import { usePageAnalyitics } from "../helpers/hooks/usePageAnalytics";
 
 const Privacity = () => {
+  usePageAnalyitics()
   return (
     <>
       <Head>
