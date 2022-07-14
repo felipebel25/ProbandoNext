@@ -870,6 +870,9 @@ header{
 .header__closemodal{
   display: none;
 }
+.banderas__default{
+  cursor: pointer;
+}
 @media (max-width: 992px) {
   .button--component{
     display: flex;
@@ -893,6 +896,7 @@ header{
     display: none;
   }
   .banderas__default{
+    cursor: pointer;
     display: flex;
   }
   .banderas__mobile{
