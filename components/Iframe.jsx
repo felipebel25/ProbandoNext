@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Iframe = () => {
-  return typeof window !== "undefined" ? (
+  return typeof window !== "undefined" && typeof document !==  'undefined' ? (
     <iframe
       title="goRegister"
       id="typeform-full"
