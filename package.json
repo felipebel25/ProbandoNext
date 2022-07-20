@@ -12,11 +12,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@xzar90/react-router-hash-link": "^6.0.4",
+    "cookies-next": "^2.1.1",
+    "dotenv": "^16.0.1",
     "next": "^12.1.6",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-ga4": "^1.4.1",
+    "sharp": "^0.30.7",
     "wow.js": "^1.2.2",
     "wowjs": "^1.1.3"
   }
